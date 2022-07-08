@@ -1,0 +1,215 @@
+
+
+body {
+        
+        background: linear-gradient(85deg, blueviolet, rgb(206, 206, 32));
+        /** background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png) **/
+        
+    }
+    
+
+
+h1 {   
+        
+
+        font-size:35px;
+        color: rgba(219, 219, 51, 1);
+        text-align: center;  
+        font-family:'monospace', Courier, monospace; 
+        font-weight: default; 
+   
+    }
+
+h2 {
+
+        font-size: 35px;
+        color: rgba(42, 63, 179, 1);
+        font-family:'monospace', Courier, monospace;
+        text-align: center;
+
+
+    }
+
+h3 {
+
+        font-size: 35px;
+        color: black;
+        text-align:center;
+        background-color:aquamarine
+    }
+
+h4 {
+
+        font-size: 35px;
+        color: white;
+        text-align:center;
+        background-color:aqua
+    }
+
+h5{
+
+        font-size: 35px;
+        color: blue;
+        text-align: center;
+
+    }
+
+h6{
+
+        font-size: 35px;
+        color: gray;
+        text-align: center;
+
+    }
+
+p   {
+
+        font-size: 35px;
+        color: rgb(1, 243, 1);
+        text-transform: uppercase;
+        text-align: center;
+        transform:scale(2)
+
+    }
+
+ul {
+
+    background-color: white;
+    color: green;
+    list-style-type:upper-roman;
+    list-style-position:inside;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border: groove;
+    border-width: 20px 20px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    bottom:default;
+    
+    z-index: 1
+        
+        
+    }
+    
+li {
+
+        text-align: center;
+        font-size: 30px;
+        
+
+    }
+
+hr {
+
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 8px;
+
+    }
+    
+
+figure {
+    
+        color: yellow;
+        text-align: center;
+        margin: default;
+        font-size: 20px
+        
+        }
+
+figcaption {
+       
+        font-size: large;
+
+}
+
+.fixedbox {
+    
+        font-size: 30px;
+        padding: 20px 0px 20px 30px ;
+        position: fixed;
+        left: 80%;
+        background-color:aliceblue;
+        border: groove;
+        border-width: 20px 20px;
+        box-shadow: 20px 20px rgba(0, 0, 0, 0.5);
+        
+        z-index: 2
+        
+    }
+
+.imgBorder {
+
+        margin: 10px 10px 10px 10px;
+        border-width: 10px 10px 10px 10px;
+        border-style: groove;
+        border-color: rgb(201, 189, 19);
+        border-radius: default;
+    }
+    
+.videoBorder {
+
+        margin: 10px 10px 10px 10px;
+        border-width: 10px 10px 10px 10px;
+        border-style: groove;
+        border-color: rgb(201, 189, 19);
+        border-radius: default;
+    }
+
+#imgWidthDbz {
+
+        height: 250px;
+        width: 250px;
+        box-shadow: 20px 20px rgba(0, 0, 0, 0.5);
+
+    }
+
+#imgWidthDbzSexy {
+
+        height: 250px;
+        width: 250px;
+        box-shadow: 20px 20px rgba(0, 0, 0, 0.5);
+        
+    }
+
+#audiorelative{
+
+    position: relative;
+    right:35%;
+
+    }
+
+    li:hover {   /** li:hover IS A PSEUDO CLASS = keyword add to selector in order to select a specific state of the element**/
+
+        color: red;
+
+    }
+
+    ul:hover{
+
+        background-color:aqua;
+
+        
+    }
+
+    .fixedbox:hover{
+
+        color:green;
+        background-color: yellow;
+        border-color: red;
+        
+        
+        
+    }
+
+    .fixedbox:hover:after{
+
+        content:" I should be on top of everything elst";
+        background-color:red;
+        color: brown;
+    }
