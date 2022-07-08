@@ -100,7 +100,7 @@
 
          border-radius: 20px;
          width: 50%;
-         height: 200px;
+         height: 20px;
          margin:  50 auto;
          background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
          
@@ -132,7 +132,139 @@
             }
           
           </style>
+
           <div class="center"></div>
+
+          <style>
+
+            .heart {
+              position: absolute;
+              margin: auto;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background-color: pink;
+              height: 50px;
+              width: 50px;
+              transform: rotate(-45deg);
+            }
+            .heart::after {
+              background-color: pink;
+              content: "";
+              border-radius: 50%;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              top: 0px;
+              left: 25px;
+            }
+            .heart::before {
+              content: "";
+              background-color: red;
+              border-radius: 50%;
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              top: -25px;
+              left: 0px;
+            }
+        </style>
+
+        <style>
+
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+
+        </style>
+                <div id="anim"></div>
+          <div class="heart"></div>
+
+        <hr>
+
+
+        <style>
+
+
+        
+          #rect {
+            animation-name: rainbow;
+            animation-duration: 4s;
+            height: 100px;
+          }
+        
+          @keyframes rainbow {
+            0% {
+              background-color: blue;
+              top: 0px;
+              left:0px;
+        
+            }
+            50% {
+              background-color: green;
+              top: 50px;
+              left: 25px;
+            }
+            100% {
+              background-color: yellow;
+              top: 0px;
+              left: -25px;
+        
+            }
+          }
+        </style>
+        <div id="rect"></div>
+
+
+        <style>
+
+            #ball {
+              
+              width: 70px;
+              height: 70px;
+              margin: 50px auto;
+              position: fixed;
+              left: 20%;
+              border-radius: 50%;
+              background: linear-gradient(
+                35deg,
+                #ccffff,
+                #ffcccc
+              );
+              animation-name: fade;
+              animation-duration: 2s;
+              animation-fill-mode: forwards;
+              animation-iteration-count: infinite;
+              animation-timing-function:ease-in;
+              
+
+            }
+          
+            @keyframes fade {
+              50% {
+                left: 60%;
+                opacity: 0.1;
+              }
+            }
+            
+          </style>
+
+        <div id="ball"></div>
+
     </body>
 
 
