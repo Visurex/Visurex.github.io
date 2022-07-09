@@ -101,9 +101,11 @@
 
         #yellowbox{
 
+           
             animation-name: animation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
+            animation-timing-function:linear;
 
             background: yellow;
 
@@ -122,23 +124,24 @@
         @keyframes animation{
 
             0%{
-                background: black;
-                 height: 50px;   
+                background: blueviolet;
+                height: 50px; 
+                
             }
             25%{
-                background: blue;
-                height: 80px;
+                background: yellow;
+                height: 100px;
             }
             50%{
                 background: red;
-                height: 100px;
+                height: 150px;
             }
             75%{
                 background: yellow;
-                height: 80px;
+                height: 100px;
             }
             100%{
-                background: pink;
+                background: blueviolet;
                 height: 50px;
             }
         }
@@ -160,8 +163,79 @@
 
         }
 
+        .moon{
+
+            animation: animation2;
+            animation-duration: 2s;
+            position: absolute;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-timing-function:ease-in-out;
+
+            background:linear-gradient(45deg, #00fd22,#e41b5e);
+
+            border-radius:50%;
+            height: 50px;
+            width: 50px;
+            margin: 0.5%;            
+
+            z-index: 19;
+        }
+
+        @keyframes animation2 {
+
+           50%{
+                opacity: 0.5;
+                margin: 300px;
+            }
+
+
+        }
+
     </style>
 
+
+
+
+
+        <style>
+            .balls {
+              border-radius: 50%;
+              position: fixed;
+              width: 50px;
+              height: 50px;
+              top: 60%;
+              animation-name: jump;
+              animation-duration: 2s;
+              animation-iteration-count: infinite;
+
+              z-index: 20;
+            }
+            #red {
+              background: red;
+              left: 25%;
+              animation-timing-function: linear;
+              position:absolute;
+            }
+            #blue {
+              background: gray;
+              left: 35%;
+              animation-timing-function: ease-out;
+              position:absolute;
+            }
+            #green {
+              background: green;
+              left: 40%;
+              animation-timing-function: cubic-bezier(0.311, 0.441, 0.444, 1.649);
+              position:absolute;
+            }
+          
+            @keyframes jump {
+              50% {
+                top: 10%;
+              }
+            }
+          </style>
 
 
     <body>
@@ -173,7 +247,7 @@
             <li id="li01" ><a href="/html/page2.html" >My Workspace</a></li>
             <li id="li01" ><a href="/html/page3.html" >CSS Designe</a></li>
             <li id="li01" ><a href="/html/page4.html" >My Portfolio</a></li>
-            <li id="li01" ><a href="/html/page5.html" >Photo Gallery</a></li>
+            <li id="li01" ><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
             <li id="li01" ><a href="/html/page6.html" >CSS Designe</a></li>
 
         </ul>
@@ -183,7 +257,6 @@
         
 
             <div class="bleubox">
-                
 
                 <div id="greenbox"></div> 
                     
@@ -191,10 +264,23 @@
                 
                 <div id="connection"></div>
 
+                <div class="moon"></div>
+
+
+
+
+
+
+                <div class="balls" id="red"></div>
+                <div class="balls" id="blue"></div>
+                <div class="balls" id="green"></div>
+
+                <div id="ball"></div>
 
             </div>
 
-      
+            
+
 
     </body>
 
