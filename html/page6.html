@@ -80,7 +80,9 @@
             
             
             background: green;
-
+            animation-name: roundup;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
             position:absolute;
 
             width: 100px;
@@ -90,6 +92,20 @@
             border: groove;
             border-width: 10px;
             border-color: gray;
+            
+        }
+
+        @keyframes roundup{
+
+            50%{ 
+                
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                margin: 296px;
+                border-width: 1px;
+                border-color: yellow;
+            }
             
         }
 
@@ -184,6 +200,7 @@
             margin: 0.5%;            
 
             z-index: 19;
+            
         }
 
         @keyframes animation2 {
@@ -216,7 +233,6 @@
 
                  opacity:1;
                  margin: 5px;
-
             }
 
         }
