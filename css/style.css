@@ -1,13 +1,13 @@
 
 
-body {
+    body {
         
         background: linear-gradient(85deg, blueviolet, rgb(206, 206, 32));
         /** background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png) **/
         
     }
     
-h1 {   
+    h1 {   
         
 
         font-size:35px;
@@ -18,7 +18,7 @@ h1 {
    
     }
 
-h2 {
+    h2 {
 
         font-size: 35px;
         color: rgba(42, 63, 179, 1);
@@ -28,7 +28,7 @@ h2 {
 
     }
 
-h3 {
+    h3 {
 
         font-size: 35px;
         color: black;
@@ -36,7 +36,7 @@ h3 {
         background-color:aquamarine
     }
 
-h4 {
+    h4 {
 
         font-size: 35px;
         color: white;
@@ -44,7 +44,7 @@ h4 {
         background-color:aqua
     }
 
-h5{
+    h5{
 
         font-size: 35px;
         color: blue;
@@ -52,7 +52,7 @@ h5{
 
     }
 
-h6{
+    h6{
 
         font-size: 35px;
         color: gray;
@@ -60,7 +60,7 @@ h6{
 
     }
 
-p   {
+    p {
 
         font-size: 35px;
         color: rgb(1, 243, 1);
@@ -70,7 +70,7 @@ p   {
 
     }
 
-ul {
+    ul {
 
     background-color: white;
     color: green;
@@ -90,7 +90,7 @@ ul {
         
     }
     
-li {
+    li {
 
         text-align: center;
         font-size: 30px;
@@ -98,7 +98,7 @@ li {
 
     }
 
-hr {
+    hr {
 
         display: block;
         margin-top: 20px;
@@ -111,7 +111,7 @@ hr {
     }
     
 
-figure {
+    figure {
     
         color: yellow;
         text-align: center;
@@ -120,13 +120,13 @@ figure {
         
         }
 
-figcaption {
+    figcaption {
        
         font-size: large;
 
-}
+    }
 
-.fixedbox {
+    .fixedbox {
     
         font-size: 30px;
         padding: 20px 0px 20px 30px ;
@@ -141,7 +141,7 @@ figcaption {
         
     }
 
-.imgBorder {
+    .imgBorder {
 
         margin: 10px 10px 10px 10px;
         border-width: 10px 10px 10px 10px;
@@ -150,7 +150,7 @@ figcaption {
         border-radius: default;
     }
     
-.videoBorder {
+    .videoBorder {
 
         margin: 10px 10px 10px 10px;
         border-width: 10px 10px 10px 10px;
@@ -159,7 +159,7 @@ figcaption {
         border-radius: default;
     }
 
-#imgWidthDbz {
+    #imgWidthDbz {
 
         height: 250px;
         width: 250px;
@@ -167,7 +167,7 @@ figcaption {
 
     }
 
-#imgWidthDbzSexy {
+    #imgWidthDbzSexy {
 
         height: 250px;
         width: 250px;
@@ -175,7 +175,7 @@ figcaption {
         
     }
 
-#audiorelative{
+    #audiorelative{
 
     position: relative;
     right:35%;

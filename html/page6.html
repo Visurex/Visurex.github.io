@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Visurex's Website</title>
+
+        <meta charset="utf-8">
+        <meta name="description"  content="Visurex's Website"/>
+        <meta name="author"       content="Visurex"/>
+
+
+
+        <script src="/js/app.js"></script>
+
+    </head>
+
+    <style>
+
+        body{
+
+            background-color:rgb(189, 175, 155);
+        }
+
+
+
+        .fixedbox1{
+            
+            text-align: center;
+            background-color: rgba(65, 107, 170, 0.774);
+            border: groove;
+            border-width: 15px;
+            border-color: blueviolet;
+            position: fixed;
+            right:0%;
+            box-shadow:10px 10px rgba(0, 0, 0, 0.5);
+
+            z-index: 10;
+
+        }
+
+        #li01{
+
+            list-style-type:square;
+            font-size: 40px;
+            font-style: oblique;
+            color: whitesmoke;
+            
+            
+
+
+        }
+
+        #li01:hover {
+
+            font-style:italic;
+
+            background-color: whitesmoke;
+
+        }
+
+        .bleubox{
+
+            background: blue;
+
+            position:relative;
+
+            height:800px;
+            width: 800px;
+            margin: 50px;
+            border: groove;
+            border-width: 20px;
+            border-color: gray;
+            border-top: 30px solid black;
+
+        }
+
+        #greenbox{
+            
+            
+            background: green;
+
+            position:absolute;
+
+            width: 100px;
+            height: 100px;
+            margin: 340px;
+
+            border: groove;
+            border-width: 10px;
+            border-color: gray;
+            
+        }
+
+        #greenbox:hover{
+
+            background: red;
+
+        }   
+
+        #yellowbox{
+
+            animation-name: animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+            background: yellow;
+
+            position: absolute;
+
+            width: 50px;
+            height: 50px;
+            margin: 365px;
+
+            border: groove;
+            border-width: 10px;
+            border-color: gray;
+            
+        }
+
+        @keyframes animation{
+
+            0%{
+                background: black;
+                 height: 50px;   
+            }
+            25%{
+                background: blue;
+                height: 80px;
+            }
+            50%{
+                background: red;
+                height: 100px;
+            }
+            75%{
+                background: yellow;
+                height: 80px;
+            }
+            100%{
+                background: pink;
+                height: 50px;
+            }
+        }
+
+        #connection {
+
+            text-align: center;
+            background: black;
+            position: absolute;
+
+            width: 200px;
+            height: 10px;
+            margin-top: 81px;
+            
+            padding: 10px;
+           
+            transform: skewX(-45deg);
+            transform: skewY(-45deg);
+
+        }
+
+    </style>
+
+
+
+    <body>
+
+
+        <ul class="fixedbox1">
+
+            <li id="li01" ><a href="../../index.html" >Main page</a></li>
+            <li id="li01" ><a href="/html/page2.html" >My Workspace</a></li>
+            <li id="li01" ><a href="/html/page3.html" >CSS Designe</a></li>
+            <li id="li01" ><a href="/html/page4.html" >My Portfolio</a></li>
+            <li id="li01" ><a href="/html/page5.html" >Photo Gallery</a></li>
+            <li id="li01" ><a href="/html/page6.html" >CSS Designe</a></li>
+
+        </ul>
+
+    
+
+        
+
+            <div class="bleubox">
+                
+
+                <div id="greenbox"></div> 
+                    
+                <div id="yellowbox"></div>
+                
+                <div id="connection"></div>
+
+
+            </div>
+
+      
+
+    </body>
+
+</html>

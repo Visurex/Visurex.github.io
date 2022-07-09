@@ -51,7 +51,8 @@
             <li><a href="/html/page3.html" >CSS Designe</a></li>
             <li><a href="/html/page4.html" >My Portfolio</a></li>
             <li><a href="/html/page5.html" >Photo Gallery</a></li>
-             
+            <li><a href="/html/page6.html" >CSS Designe</a></li>
+
         </ul>
 
 
@@ -74,8 +75,7 @@
              left:600px;
              bottom:0px;
              right:0px;
-             
-             
+          
          }
 
          .bluebox{
@@ -91,19 +91,20 @@
              left:600px;
              bottom:0px;
              right:0px;
+
          }
 
          .blackyellowbox{
 
-         transform: skewX(32deg);
-         transform: skewy(32deg);
-
+         transform: skewX(0deg);
+         transform: skewY(45deg);
+        
          border-radius: 20px;
-         width: 50%;
-         height: 20px;
+         width: 300px;
+         height: 30px;
          margin:  50 auto;
          background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
-         
+         position: 
      
          }
 
@@ -113,11 +114,13 @@
          <div class="yellowbox">hey</div>
          <div class="blackyellowbox"></div>
      
-        <hr>
+
     
 
         <style>
+
             .center {
+
               position: absolute;
               margin: auto;
               top: 0;
@@ -129,6 +132,7 @@
               background-color: transparent;
               border-radius: 50%;
               box-shadow: 25px 25px 0px 0px blue;
+
             }
           
           </style>
@@ -138,6 +142,7 @@
           <style>
 
             .heart {
+
               position: absolute;
               margin: auto;
               top: 0;
@@ -148,8 +153,10 @@
               height: 50px;
               width: 50px;
               transform: rotate(-45deg);
+
             }
             .heart::after {
+
               background-color: pink;
               content: "";
               border-radius: 50%;
@@ -158,8 +165,10 @@
               height: 50px;
               top: 0px;
               left: 25px;
+
             }
             .heart::before {
+
               content: "";
               background-color: red;
               border-radius: 50%;
@@ -168,67 +177,17 @@
               height: 50px;
               top: -25px;
               left: 0px;
+
             }
-        </style>
-
-        <style>
-
-#anim {
-  animation-name: colorful;
-  animation-duration: 3s;
-  height: 200px;
-  width: 200px;
-}
-
-@keyframes colorful {
-  0% {
-    background-color: blue;
-  }
-  100% {
-    background-color: yellow;
-  }
-}
-
 
         </style>
-                <div id="anim"></div>
+
+
+
+          <div id="anim"></div>
           <div class="heart"></div>
 
-        <hr>
-
-
-        <style>
-
-
-        
-          #rect {
-            animation-name: rainbow;
-            animation-duration: 4s;
-            height: 100px;
-          }
-        
-          @keyframes rainbow {
-            0% {
-              background-color: blue;
-              top: 0px;
-              left:0px;
-        
-            }
-            50% {
-              background-color: green;
-              top: 50px;
-              left: 25px;
-            }
-            100% {
-              background-color: yellow;
-              top: 0px;
-              left: -25px;
-        
-            }
-          }
-        </style>
-        <div id="rect"></div>
-
+      
 
         <style>
 
@@ -259,11 +218,15 @@
                 left: 60%;
                 opacity: 0.1;
               }
+              
             }
             
           </style>
 
         <div id="ball"></div>
+
+
+
 
     </body>
 
