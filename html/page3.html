@@ -26,161 +26,102 @@
 
     <body>
 
-        <hr>
+      <link>
+      
+          <a href="https://www.google.com" target="_blanc"><img src="/assets/images/Logos/google-img.png" width="180px" alt="sould be a image"></a>
+          <a href="https://www.facebook.com" target="_blanc"><img src="/assets/images/logos/facebook-logo-img.png" width="115px" alt="sould be a image"></a>
+          <a href="https://www.twitch.tv" target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png" width="90px" alt="sould be a image"></a>
+          <a href="https://www.twitter.com" target="_blanc"><img src="/assets/images/Logos/twitter-img.png"width="110px" alt="sould be a image"></a> 
+          <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png" width="110px" alt="sould be a image"></a>
+          <a href="https://www.youtube.com" target="_blanc"><img src="/assets/images/Logos/youtube-img.png" width="160px" alt="sould be a image"></a>
+          <a href="https://www.github.com/" target="_blanc"><img src="/assets/images/Logos/github-img.png" width="160px" alt="sould be a image"></a>
 
-        <link>
+      </link>
+
+      <hr>  
         
-            <a href="https://www.google.com" target="_blanc"><img src="/assets/images/Logos/google-img.png" width="180px" alt="sould be a image"></a>
-            <a href="https://www.facebook.com" target="_blanc"><img src="/assets/images/logos/facebook-logo-img.png" width="115px" alt="sould be a image"></a>
-            <a href="https://www.twitch.tv" target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png" width="90px" alt="sould be a image"></a>
-            <a href="https://www.twitter.com" target="_blanc"><img src="/assets/images/Logos/twitter-img.png"width="110px" alt="sould be a image"></a> 
-            <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png" width="110px" alt="sould be a image"></a>
-            <a href="https://www.youtube.com" target="_blanc"><img src="/assets/images/Logos/youtube-img.png" width="160px" alt="sould be a image"></a>
-            <a href="https://www.github.com/" target="_blanc"><img src="/assets/images/Logos/github-img.png" width="160px" alt="sould be a image"></a>
+      <h1>Third page</h1>
 
-        </link>
+      <ul>
 
-        <hr>  
-          
-        <h1>Third page</h1>
+          <li><a href="../../index.html" >Main page</a></li>
+          <li><a href="/html/page2.html" >My Workspace</a></li>
+          <li><a href="/html/page3.html" >old CSS Designe page</a></li>
+          <li><a href="/html/page4.html" >My Portfolio</a></li>
+          <li><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
+          <li><a href="/html/page6.html" >New CSS Designe</a></li>
 
-        <ul>
-
-            <li><a href="../../index.html" >Main page</a></li>
-            <li><a href="/html/page2.html" >My Workspace</a></li>
-            <li><a href="/html/page3.html" >CSS Designe</a></li>
-            <li><a href="/html/page4.html" >My Portfolio</a></li>
-            <li><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
-            <li><a href="/html/page6.html" >CSS Designe</a></li>
-
-        </ul>
+      </ul>
 
 
 
 
-<hr>
+      <hr>
 
-     <style>
+      <style>
 
-         .yellowbox {
+          .center {
 
-             z-index: 3;
-             background-color: yellow;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            border-radius: 50%;
+            box-shadow: 25px 25px 0px 0px blue;
 
-             height: 100px;
-             width: 100px;
-
-             position: sticky;
-             top:600px;
-             left:600px;
-             bottom:0px;
-             right:0px;
-          
-         }
-
-         .bluebox{
-
-             z-index: 2;
-             background-color: blue;
-             height: 50px;
-             width: 50px;
-
-
-             position:sticky;
-             top:550px;
-             left:600px;
-             bottom:0px;
-             right:0px;
-
-         }
-
-         .blackyellowbox{
-
-         transform: skewX(0deg);
-         transform: skewY(45deg);
+          }
         
-         border-radius: 20px;
-         width: 300px;
-         height: 30px;
-         margin:  50 auto;
-         background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
-         position: 
-     
-         }
+        </style>
 
-     </style>
-
-         <div class="bluebox" >hello</div>
-         <div class="yellowbox">hey</div>
-         <div class="blackyellowbox"></div>
-     
-
-    
+        <div class="center"></div>
 
         <style>
 
-            .center {
+          .heart {
 
-              position: absolute;
-              margin: auto;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              width: 100px;
-              height: 100px;
-              background-color: transparent;
-              border-radius: 50%;
-              box-shadow: 25px 25px 0px 0px blue;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: pink;
+            height: 50px;
+            width: 50px;
+            transform: rotate(-45deg);
 
-            }
-          
-          </style>
+          }
+          .heart::after {
 
-          <div class="center"></div>
+            background-color: pink;
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0px;
+            left: 25px;
 
-          <style>
+          }
+          .heart::before {
 
-            .heart {
+            content: "";
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            left: 0px;
 
-              position: absolute;
-              margin: auto;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              background-color: pink;
-              height: 50px;
-              width: 50px;
-              transform: rotate(-45deg);
+          }
 
-            }
-            .heart::after {
-
-              background-color: pink;
-              content: "";
-              border-radius: 50%;
-              position: absolute;
-              width: 50px;
-              height: 50px;
-              top: 0px;
-              left: 25px;
-
-            }
-            .heart::before {
-
-              content: "";
-              background-color: red;
-              border-radius: 50%;
-              position: absolute;
-              width: 50px;
-              height: 50px;
-              top: -25px;
-              left: 0px;
-
-            }
-
-        </style>
+      </style>
 
 
 
