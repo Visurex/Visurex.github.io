@@ -101,7 +101,6 @@
 
         #yellowbox{
 
-           
             animation-name: animation;
             animation-duration: 10s;
             animation-iteration-count: infinite;
@@ -131,6 +130,7 @@
             25%{
                 background: yellow;
                 height: 100px;
+               
             }
             50%{
                 background: red;
@@ -139,11 +139,13 @@
             75%{
                 background: yellow;
                 height: 100px;
+                
             }
             100%{
                 background: blueviolet;
                 height: 50px;
             }
+
         }
 
         #connection {
@@ -161,15 +163,17 @@
             transform: skewX(-45deg);
             transform: skewY(-45deg);
 
+            z-index: 100; 
+
         }
 
         .moon{
 
             animation: animation2;
-            animation-duration: 2s;
+            animation-duration: 10s;
             position: absolute;
             animation-iteration-count: infinite;
-            animation-fill-mode: forwards;
+            animation-fill-mode:both;
             animation-timing-function:ease-in-out;
 
             background:linear-gradient(45deg, #00fd22,#e41b5e);
@@ -184,11 +188,36 @@
 
         @keyframes animation2 {
 
-           50%{
-                opacity: 0.5;
-                margin: 300px;
+            0%{
+                opacity: 1;
+                margin: 5px;
             }
 
+           25%{
+                opacity: 0.75;
+                margin: 750px 0px 0px 0px;
+            }
+
+            50%{
+
+                opacity:0.5;
+                margin: 750px 0px 0px 750px;
+            }
+
+
+            75%{
+
+                opacity:0.25;
+                margin: 0px 750px 0px 750px;
+
+            }
+
+            100%{
+
+                 opacity:1;
+                 margin: 0px 750px 750px 0px;
+
+            }
 
         }
 
@@ -199,6 +228,7 @@
 
 
         <style>
+
             .balls {
               border-radius: 50%;
               position: fixed;
@@ -235,6 +265,7 @@
                 top: 10%;
               }
             }
+
           </style>
 
 
@@ -252,9 +283,7 @@
 
         </ul>
 
-    
 
-        
 
             <div class="bleubox">
 
@@ -278,9 +307,6 @@
                 <div id="ball"></div>
 
             </div>
-
-            
-
 
     </body>
 
