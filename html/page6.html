@@ -236,7 +236,7 @@
         }
 
     </style>
-
+            <!--above mine below not mine-->
     <style>
 
         .balls {
@@ -269,20 +269,107 @@
 
     </style>
 
+    <style>
+        .heart {
+    
+          position: absolute;
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: pink;
+          height: 50px;
+          width: 50px;
+          transform: rotate(-45deg);
+    
+        }
+        .heart::after {
+    
+          background-color: pink;
+          content: "";
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 0px;
+          left: 25px;
+    
+        }
+        .heart::before {
+    
+          content: "";
+          background-color: red;
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: 0px;
+    
+        }
+    
+    </style>
+
+    <style>
+
+        .blackyellowbox{
+
+        transform: skewX(0deg);
+        transform: skewY(45deg);
+        
+        border-radius: 20px;
+        width: 300px;
+        height: 30px;
+        margin:  50 auto;
+        background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
+        position: absolute;
+        
+        }
+
+    </style>
+
+
+
+
+    <style>
+
+            .center {
+
+              position: absolute;
+              margin: auto;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              width: 100px;
+              height: 100px;
+              background-color: transparent;
+              border-radius: 50%;
+              box-shadow: 25px 25px 0px 0px rgb(206, 31, 60);
+
+            }
+        
+    </style>
+
     <body>
 
         <header>
+            
+            <nav>
 
-            <ul class="fixedbox1">
+                <ul class="fixedbox1">
 
-                <li id="li01" ><a href="../../index.html" >Main page</a></li>
-                <li id="li01" ><a href="/html/page2.html" >My Workspace</a></li>
-                <li id="li01" ><a href="/html/page3.html" >third page</a></li>
-                <li id="li01" ><a href="/html/page4.html" >My Portfolio</a></li>
-                <li id="li01" ><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
-                <li id="li01" ><a href="/html/page6.html" >New CSS Designe</a></li>
+                    <li id="li01" ><a href="../../index.html" >Main page</a></li>
+                    <li id="li01" ><a href="/html/page2.html" >My Workspace</a></li>
+                    <li id="li01" ><a href="/html/page3.html" >third page</a></li>
+                    <li id="li01" ><a href="/html/page4.html" >My Portfolio</a></li>
+                    <li id="li01" ><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
+                    <li id="li01" ><a href="/html/page6.html" >New CSS Designe</a></li>
 
-            </ul>
+                </ul>
+
+            </nav>
             
         </header>
 
@@ -309,98 +396,14 @@
 
                 <div id="ball"></div>
 
-            </div>
-
-            <style>
-
-                .blackyellowbox{
-       
-                transform: skewX(0deg);
-                transform: skewY(45deg);
-               
-                border-radius: 20px;
-                width: 300px;
-                height: 30px;
-                margin:  50 auto;
-                background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
-                position: absolute;
-                
-                }
-       
-            </style>
-       
-       
                 <div class="blackyellowbox"></div>
 
-            <style>
-
-                    .center {
-          
-                      position: absolute;
-                      margin: auto;
-                      top: 0;
-                      right: 0;
-                      bottom: 0;
-                      left: 0;
-                      width: 100px;
-                      height: 100px;
-                      background-color: transparent;
-                      border-radius: 50%;
-                      box-shadow: 25px 25px 0px 0px rgb(206, 31, 60);
-          
-                    }
-                  
-            </style>
-          
-                <div class="center"></div>
-
-            <style>
-
-                    .heart {
-          
-                      position: absolute;
-                      margin: auto;
-                      top: 0;
-                      right: 0;
-                      bottom: 0;
-                      left: 0;
-                      background-color: pink;
-                      height: 50px;
-                      width: 50px;
-                      transform: rotate(-45deg);
-          
-                    }
-                    .heart::after {
-          
-                      background-color: pink;
-                      content: "";
-                      border-radius: 50%;
-                      position: absolute;
-                      width: 50px;
-                      height: 50px;
-                      top: 0px;
-                      left: 25px;
-          
-                    }
-                    .heart::before {
-          
-                      content: "";
-                      background-color: red;
-                      border-radius: 50%;
-                      position: absolute;
-                      width: 50px;
-                      height: 50px;
-                      top: -25px;
-                      left: 0px;
-          
-                    }
-          
-            </style>
-          
-          
-          
                 <div id="anim"></div>
                 <div class="heart"></div>
+
+                <div class="center"></div>
+
+            </div>
 
         </main>
 
