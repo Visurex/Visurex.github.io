@@ -65,7 +65,7 @@
         color: rgb(1, 243, 1);
         text-transform: uppercase;
         text-align: center;
-        transform:scale(2)
+        
 
     }
 
@@ -81,11 +81,7 @@
         border-width: 20px 20px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
 
-    
-    
-    
         z-index: 1
-        
         
     }
     
