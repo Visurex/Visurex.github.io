@@ -2,7 +2,7 @@
 
     body {
         
-        background: linear-gradient(85deg, blueviolet, rgb(206, 206, 32));
+        background: linear-gradient(80deg, blueviolet, rgb(206, 206, 32));
         /** background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png) **/
         
     }
@@ -14,7 +14,7 @@
         color: rgba(219, 219, 51, 1);
         text-align: center;  
         font-family:'monospace', Courier, monospace; 
-        font-weight: default; 
+        
    
     }
 
@@ -71,20 +71,20 @@
 
     ul {
 
-    background-color: white;
-    color: green;
-    list-style-type:upper-roman;
-    list-style-position:inside;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    border: groove;
-    border-width: 20px 20px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+        background: white;
+        color: green;
+        list-style-type:upper-roman;
+        list-style-position:inside;
+        padding: 10px 10px;
+        margin: 10px 10px;
+        border: groove;
+        border-width: 20px 20px;
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
 
-    position: relative;
-    bottom:default;
     
-    z-index: 1
+    
+    
+        z-index: 1
         
         
     }
@@ -99,7 +99,7 @@
 
     hr {
 
-        display: block;
+       
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: auto;
@@ -129,10 +129,10 @@
     .fixedbox {
     
         font-size: 30px;
-        padding: 20px 0px 20px 30px ;
+        
         position: fixed;
-        left: 80%;
-        background-color:aliceblue;
+        right: 0%;
+        background:aliceblue;
         border: groove;
         border-width: 10px 10px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
@@ -177,8 +177,8 @@
 
     #audiorelative{
 
-    position: relative;
-    right:35%;
+    
+    right:10%;
 
     }
 
@@ -208,6 +208,6 @@
     .fixedbox:hover:after{
 
         content:" I should be on top of everything elst";
-        background-color:red;
-        color: brown;
+        
+        
     }
