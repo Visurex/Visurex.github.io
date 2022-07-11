@@ -2,7 +2,7 @@
 
     body {
         
-        background: linear-gradient(80deg, blueviolet, rgb(206, 206, 32));
+        background: linear-gradient(75deg, hsl(199, 77%, 53%), hsl(198, 51%, 18%));
         /** background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png) **/
         
     }
@@ -20,8 +20,8 @@
 
     h2 {
 
-        font-size: 35px;
-        color: rgba(42, 63, 179, 1);
+        font-size: 40px;
+        color: hsl(123, 72%, 44%);
         font-family:'monospace', Courier, monospace;
         text-align: center;
 
@@ -38,7 +38,7 @@
     h4 {
 
         font-size: 35px;
-        color: white;
+        color: hsl(0, 93%, 52%);
         text-align:center;
         background-color:aqua
     }
@@ -46,7 +46,7 @@
     h5{
 
         font-size: 35px;
-        color: blue;
+        color: rgb(226, 41, 41);
         text-align: center;
 
     }
@@ -54,7 +54,7 @@
     h6{
 
         font-size: 35px;
-        color: gray;
+        color: hsl(110, 100%, 49%);
         text-align: center;
 
     }
