@@ -21,27 +21,33 @@
             background-color:rgb(189, 175, 155);
         }
 
+   </style>
 
+    <style>
 
         .fixedbox1 {
             
             text-align: center;
             background-color: rgba(65, 107, 170, 0.774);
             border: groove;
-            border-width: 10px;
+            border-width: 5px;
             border-color: blueviolet;
             position: fixed;
             right:0%;
-            box-shadow:10px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 
             z-index: 10;
 
         }
 
+    </style>
+
+    <style>
+
         #li01 {
 
             list-style-type:square;
-            font-size: 40px;
+            font-size: 30px;
             font-style: oblique;
             color: rgba(97, 22, 196, 0.39);
 
@@ -54,6 +60,10 @@
             background-color: whitesmoke;
 
         }
+
+    </style>
+
+    <style>
 
         .bleubox {
 
@@ -70,6 +80,10 @@
             border-top: 30px solid black;
 
         }
+
+    </style>
+
+    <style>
 
         #greenbox {
             
@@ -103,6 +117,10 @@
             }
             
         }
+    
+    </style>
+
+    <style>
 
         #greenbox:hover {
 
@@ -159,6 +177,10 @@
 
         }
 
+    </style>
+
+    <style>
+
         #connection {
 
             text-align: center;
@@ -178,16 +200,20 @@
 
         }
 
+    </style>
+
+    <style>
+
         .moon {
 
             animation: animation2;
             animation-duration: 10s;
             position: absolute;
             animation-iteration-count: infinite;
-            animation-fill-mode:both;
-            animation-timing-function:ease-in-out;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
 
-            background:linear-gradient(45deg, #00fd22,#e41b5e);
+            background:linear-gradient(45deg, hsl(118, 92%, 50%),hsla(340, 79%, 50%, 0.418));
 
             border-radius:50%;
             height: 50px;
@@ -219,7 +245,7 @@
 
             75% {
 
-                opacity:0.25;
+                opacity:0.5;
                 margin: 5px 745px 5px 745px;
 
             }
@@ -233,120 +259,65 @@
         }
 
     </style>
-            <!--above mine below not mine-->
-    <style>
+            <!-- style above mine  style below not mine-->
 
-        .balls {
 
-          border-radius: 50%;
-          position: fixed;
-          width: 50px;
-          height: 50px;
-          top: 60%;
-          animation-name: jump;
-          animation-duration: 2s;
-          animation-iteration-count: infinite;
-          z-index: 20;
-        }
 
-        #green {
-
-          background: green;
-          left: 20%;
-          top:85%;
-          animation-timing-function: cubic-bezier(0.6, 0.3, 0.6,1.6);
-          position:absolute;
-        }
-      
-        @keyframes jump {
-          50% {
-            top: 10%;
-          }
-        }
-
-    </style>
-
-    <style>
-        .heart {
-    
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-color: pink;
-          height: 50px;
-          width: 50px;
-          transform: rotate(-45deg);
-    
-        }
-        .heart::after {
-    
-          background-color: pink;
-          content: "";
-          border-radius: 50%;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          top: 0px;
-          left: 25px;
-    
-        }
-        .heart::before {
-    
-          content: "";
-          background-color: red;
-          border-radius: 50%;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          top: -25px;
-          left: 0px;
-    
-        }
-    
-    </style>
 
     <style>
 
         .blackyellowbox{
-
+        
         transform: skewX(0deg);
-        transform: skewY(45deg);
+        transform: skewY(0deg);
+        
+        animation: blackyellow;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
         
         border-radius: 20px;
-        width: 300px;
+        width: 200px;
         height: 30px;
-        margin:  50 auto;
+        margin:  55px 55px 55px 55px;
         background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
         position: absolute;
         
         }
 
-    </style>
+        @keyframes blackyellow{         /** 800x800 200 30**/
+
+            0% {
+                
+                margin: 56px 56px 56px 56px;
+            }
+
+           25%{
+                
+                margin: 714px 56px 56px 56px;
+            }
+
+            50% {
+
+                
+                margin: 714px 56px 256px 545px;
+            }
 
 
+            75% {
 
-
-    <style>
-
-            .center {
-
-              position: absolute;
-              margin: auto;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              width: 100px;
-              height: 100px;
-              background-color: transparent;
-              border-radius: 50%;
-              box-shadow: 25px 25px 0px 0px rgb(206, 31, 60);
+                
+                margin: 56px 715px 56px 545px;
 
             }
-        
+
+            100% {
+
+                 
+                 margin: 56px 56px 56px 56px;
+            }
+        }
+
     </style>
 
     <body>
@@ -383,18 +354,7 @@
 
                 <div class="moon"></div>
 
-                <div class="balls" id="red"></div>
-                <div class="balls" id="blue"></div>
-                <div class="balls" id="green"></div>
-
-                <div id="ball"></div>
-
                 <div class="blackyellowbox"></div>
-
-                <div id="anim"></div>
-                <div class="heart"></div>
-
-                <div class="center"></div>
 
             </div>
 
@@ -410,3 +370,89 @@
     </body>
 
 </html>
+
+<!--   
+    
+------------------------------------------
+    
+    <style>
+        .heart {
+    
+          position: absolute;
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: pink;
+          height: 50px;
+          width: 50px;
+          transform: rotate(-45deg);
+    
+        }
+        .heart::after {
+    
+          background-color: hsl(350, 100%, 88%);
+          content: "";
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: 0px;
+          left: 25px;
+    
+        }
+        .heart::before {
+    
+          content: "";
+          background-color: hsl(350, 100%, 88%);
+          border-radius: 50%;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          top: -25px;
+          left: 0px;
+    
+        }
+    </style>
+
+    <div class="heart"></div>
+
+--------------------------------------------
+
+    <style>
+
+        .balls {
+
+          border-radius: 50%;
+          position: fixed;
+          width: 50px;
+          height: 50px;
+          top: 60%;
+          animation-name: jump;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          z-index: 20;
+        }
+
+        #green {
+
+          background: green;
+          left: 20%;
+          top:85%;
+          animation-timing-function: cubic-bezier(0.6, 0.3, 0.6,1.6);
+          position:absolute;
+        }
+      
+        @keyframes jump {
+          50% {
+            top: 10%;
+          }
+        }
+
+    </style>
+                <div class="balls" id="green"></div>
+------------------------------------------------------
+
+
+-->
