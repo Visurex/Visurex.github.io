@@ -7,6 +7,8 @@
         display: inline-block;  wraps the block to the content
         border: #fff 1px solid;
     </select>
+    accesskey="g"
+    tabindex="0"
 -->
 
 <!DOCTYPE html>  
@@ -126,19 +128,23 @@
         
             <hr>
 
-            <form>
+            <section>
 
-                <input type="text"     value="Enter your username"/>
-                <input type="password" value="Enter password"/>
+                <form>
 
-            </form>
+                    <input type="text"     value="Enter your username"/>
+                    <input type="password" value="Enter password"/>
+
+                </form>
+
+            </section>
 
             <article>
 
-                <h3>I'm a h3 heading element !</h3>
-                <h4>I'm a h4 heading element !</h4>
-                <h5>I'm a h5 heading element !</h5>
-                <h6>I'm a h6 heading element ! and thats the max there is !</h6>
+                <h3>I'am a h3 heading element !</h3>
+                <h4>I'am a h4 heading element !</h4>
+                <h5>I'am a h5 heading element !</h5>
+                <h6>I'am a h6 heading element ! and thats the max there is !</h6>
 
             </article>   
             
@@ -155,20 +161,40 @@
             <span>span1</span>
 
             
+            <section>
 
-            <form>                  <!-- form for imputs logins post payment e mails passwords, checkboxes, radio's,  select drop downs , buttons more  -->
+                <form>                  <!-- form for imputs logins post payment e mails passwords, checkboxes, radio's,  select drop downs , buttons more  -->
 
-                <input type="date"/>
-                <input type="email"/>
-                <input type="range"/>
-                <input type="file"/>
-                <input type="checkbox"/>
-                <input type="checkbox"/>
-                <input type="radio" name="button"/>
-                <input type="radio" name="button"/>
-                <input type="submit"/>
+                   <fieldset>
 
-            </form>
+                        <legend>Choose a option</legend>
+
+                        <label for="date">Your birth date:</label>
+                        <input type="date" id="date"/>
+                        <input type="submit"/>  <br/>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email"/>
+                        <input type="submit"/>  <br/>
+
+                        <label for="ranger">ranger: </label>
+                        <input type="range" id=ranger/>   <br/>
+
+                        <label for="importafile">import a file: </label>
+                        <input type="file" id="importafile"/>    <br/>
+
+                        <label for="checkboxes">Checkboxes</label>
+                        <input type="checkbox"  id="checkboxes" name="Checkbox1"/>
+                        <input type="checkbox" id="checkboxes" name="Checkbox2"/>  <br/>
+
+                        <input type="radio" name="button"/>
+                        <input type="radio" name="button"/>
+
+                    </fieldset>
+
+                </form>
+
+            </section>
 
             <table>
             
@@ -176,14 +202,7 @@
 
                     <thead>
 
-                        <form>
 
-                            <textarea rows="10" cols="30">
-                                enter a word
-                        
-                            </textarea>
-
-                        </form>
 
                     <td>1</td>
                     <td>2</td>
@@ -225,6 +244,20 @@
 
             </table>
 
+            <section>
+
+                <form>
+
+                    <textarea rows="10" cols="30">
+
+                        enter a word
+                    
+                    </textarea>
+
+                </form>
+
+            </section>
+
             <hr>
 
             <iframe src="https://Visurex.github.io" width="600" height="200">not supported iframe</iframe>
@@ -238,6 +271,18 @@
 
         </footer>
 
+        <section>
+            <form>
+              <p>Sign up to receive Camper Cat's blog posts by email here!</p>
+        
+        
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email">
+        
+        
+              <input type="submit" name="submit" value="Submit">
+            </form>
+          </section>
     </body>
 
 </html>
