@@ -1,9 +1,16 @@
 
+    @media (max-height: 800px){
+
+         p{font-size: 10px;}
+         
+        }
+
 
     body {
         
         background: linear-gradient(75deg, hsl(199, 77%, 53%), hsl(198, 51%, 18%));
         /** background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png) **/
+        
         
     }
     
