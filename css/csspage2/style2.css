@@ -1,0 +1,66 @@
+body {
+        
+    background: linear-gradient(75deg, hsl(199, 77%, 53%), hsl(198, 51%, 18%));
+
+    }
+
+    h1 {   
+        
+
+        font-size:35px;
+        color: rgba(219, 219, 51, 1);
+        text-align: center;  
+        font-family:'monospace', Courier, monospace; 
+        
+   
+    }
+
+    ul {
+
+        background: white;
+        color: green;
+        list-style-type:upper-roman;
+        list-style-position:inside;
+        padding: 10px 10px;
+        margin: 10px 10px;
+        border: groove;
+        border-width: 20px 20px;
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+
+        z-index: 1
+        
+    }
+    
+    li {
+
+        text-align: center;
+        font-size: 25px;
+        
+
+    }
+
+    li:hover { 
+
+        color: red;
+
+    }
+
+    ul:hover{
+
+        background-color:aqua;
+
+        
+    }
+
+    hr {
+
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 8px;
+        border-color: rgba(32, 209, 194, 0.815);
+
+    }

@@ -9,317 +9,55 @@
         <meta charset="utf-8">
         <meta name="description"  content="Visurex's Website"/>
         <meta name="author"       content="Visurex"/>
+        
+        <link rel="stylesheet"    href="/css/csspage6/style6.css">
 
         <script src="/js/app.js"></script>
 
     </head>
 
-    <style>
-
-        body {
-
-            background-color:rgb(189, 175, 155);
-        }
-
-        .fixedbox1 {
-            
-            text-align: center;
-            background-color: rgba(65, 107, 170, 0.774);
-            border: groove;
-            border-width: 5px;
-            border-color: blueviolet;
-            position: fixed;
-            right:0%;
-            box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
-
-            z-index: 10;
-
-        }
-
-        #li01 {
-
-            list-style-type:square;
-            font-size: 30px;
-            font-style: oblique;
-            color: rgba(97, 22, 196, 0.39);
-
-        }
-
-        #li01:hover {
-
-            font-style:italic;
-            background-color: whitesmoke;
-
-        }
-
-        .bleubox {
-
-            background: blue;
-            position:relative;
-            height:800px;
-            width: 800px;
-            margin: 50px;
-            border: groove;
-            border-width: 20px;
-            border-color: gray;
-            border-top: 30px solid black;
-
-        }
-
-        #greenbox {
-              
-            background: green;
-            animation-name: roundup;
-            animation-iteration-count: infinite;
-            animation-duration: 10s;
-            position:absolute;
-
-            width: 100px;
-            height: 100px;
-            margin: 340px;
-
-            border: groove;
-            border-width: 10px;
-            border-color: gray;
-            
-        }
-
-        @keyframes roundup{
-
-            50%{ 
-                
-                border-radius: 50%;
-                width: 200px;
-                height: 200px;
-                margin: 296px;
-                border-width: 1px;
-                border-color: yellow;
-            }
-            
-        }
-    
-        #greenbox:hover {
-
-            background: red;
-
-        }   
-
-        #yellowbox {
-
-            animation-name: animation;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-timing-function:linear;
-
-            background: yellow;
-
-            position: absolute;
-
-            width: 50px;
-            height: 50px;
-            margin: 365px;
-
-            border: groove;
-            border-width: 10px;
-            border-color: gray;
-            
-        }
-
-        @keyframes animation {
-
-            0%{
-                background: blueviolet;
-                height: 50px; 
-                
-            }
-            25%{
-                background: yellow;
-                height: 100px;
-               
-            }
-            50%{
-                background: red;
-                height: 150px;
-            }
-            75%{
-                background: yellow;
-                height: 100px;
-                
-            }
-            100%{
-                background: blueviolet;
-                height: 50px;
-            }
-
-        }
-
-        #connection {
-
-            text-align: center;
-            background: black;
-            position: absolute;
-
-            width: 200px;
-            height: 10px;
-            margin-top: 81px;
-            
-            padding: 10px;
-           
-            transform: skewX(-45deg);
-            transform: skewY(-45deg);
-
-            z-index: 100; 
-
-        }
-
-        .moon {
-
-            animation: animation2;
-            animation-duration: 10s;
-            position: absolute;
-            animation-iteration-count: infinite;
-            animation-fill-mode: both;
-            animation-timing-function: linear;
-
-            background:linear-gradient(45deg, hsl(118, 92%, 50%),hsla(340, 79%, 50%, 0.418));
-
-            border-radius:50%;
-            height: 50px;
-            width: 50px;
-            margin: 0.5%;            
-
-            z-index: 19;
-            
-        }
-
-        @keyframes animation2 {
-
-            0% {
-                opacity: 1;
-                margin: 5px 5px 5px 5px;
-            }
-
-           25%{
-                opacity: 0.75;
-                margin: 745px 5px 5px 5px;
-            }
-
-            50% {
-
-                opacity:0.5;
-                margin: 745px 5px 5px 745px;
-            }
-
-
-            75% {
-
-                opacity:0.5;
-                margin: 5px 745px 5px 745px;
-
-            }
-
-            100% {
-
-                 opacity:1;
-                 margin: 5px;
-            }
-
-        }
-
-    </style>
-            <!-- style above mine  style below not mine-->
-
-
-
-
-    <style>
-
-        .blackyellowbox{
-        
-        transform: skewX(0deg);
-        transform: skewY(0deg);
-        
-        animation: blackyellow;
-        animation-duration: 10s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        
-        border-radius: 20px;
-        width: 200px;
-        height: 30px;
-        margin:  55px 55px 55px 55px;
-        background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
-        position: absolute;
-        
-        }
-
-        @keyframes blackyellow{         /** 800x800 200 30**/
-
-            0% {
-                
-                margin: 56px 56px 56px 56px;
-            }
-
-           25%{
-                
-                margin: 714px 56px 56px 56px;
-            }
-
-            50% {
-
-                
-                margin: 714px 56px 256px 545px;
-            }
-
-
-            75% {
-
-                
-                margin: 56px 715px 56px 545px;
-
-            }
-
-            100% {
-
-                 
-                 margin: 56px 56px 56px 56px;
-            }
-        }
-
-    </style>
-
     <body>
 
         <header>
-            
-            <nav>
-                <nav id="header"><a href="#footer">Jump to bottom of page</a></nav>
+            <header>
 
-                <ul class="fixedbox1">
-
-                    <li id="li01"> <a href="../../index.html">Main page</a></li>
-                    <li id="li01"> <a href="/html/page2.html">My Workspace</a></li>
-                    <li id="li01"> <a href="/html/page3.html">My music page</a></li>
-                    <li id="li01"> <a href="/html/page4.html">My Portfolio</a></li>
-                    <li id="li01"> <a href="/html/page5.html">Dragonball pic Gallery</a></li>
-                    <li id="li01"> <a href="/html/page6.html">CSS Designe</a></li>
-                    <li id="li01"> <a href="/html/page7.html" >Flex box Designe</a></li>
- 
-                </ul>
-
-            </nav>
-            
-        </header>
+                <nav> 
+                
+                    <nav id="header"><a href="#footer">Jump to bottom of page</a></nav>
+    
+                    <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="sould be a image"></a>
+                    <a href="https://www.facebook.com"  target="_blanc"><img src="/assets/images/Logos/facebook-logo-img.png"   width="115px" alt="sould be a image"></a>
+                    <a href="https://www.twitch.tv"     target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png"     width="90px"  alt="sould be a image"></a>
+                    <a href="https://www.twitter.com"   target="_blanc"><img src="/assets/images/Logos/twitter-img.png"         width="110px" alt="sould be a image"></a> 
+                    <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png"  width="110px" alt="sould be a image"></a>
+                    <a href="https://www.youtube.com"   target="_blanc"><img src="/assets/images/Logos/youtube-img.png"         width="160px" alt="sould be a image"></a>
+                    <a href="https://www.github.com/"   target="_blanc"><img src="/assets/images/Logos/github-img.png"          width="160px" alt="sould be a image"></a>
+    
+                    <ul>
+    
+                        <li><a href="../../index.html" >Main page</a></li>
+                        <li><a href="/html/page2.html" >My Workspace</a></li>
+                        <li><a href="/html/page3.html" >My music page</a></li>
+                        <li><a href="/html/page4.html" >My Portfolio</a></li>
+                        <li><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
+                        <li><a href="/html/page6.html" >CSS Designe</a></li>
+                        <li><a href="/html/page7.html" >Flex box Designe</a></li>
+        
+                    </ul>
+    
+                </nav>
+    
+            </header>
 
         <main>
 
             <div class="bleubox">
 
-                <div id="greenbox"></div> 
+                <div class="greenbox"></div> 
                     
-                <div id="yellowbox"></div>
+                <div class="yellowbox"></div>
                 
-                <div id="connection"></div>
+                <div class="connection"></div>
 
                 <div class="moon"></div>
 
@@ -340,88 +78,3 @@
 
 </html>
 
-<!--   
-    
-------------------------------------------
-    
-    <style>
-        .heart {
-    
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          background-color: pink;
-          height: 50px;
-          width: 50px;
-          transform: rotate(-45deg);
-    
-        }
-        .heart::after {
-    
-          background-color: hsl(350, 100%, 88%);
-          content: "";
-          border-radius: 50%;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          top: 0px;
-          left: 25px;
-    
-        }
-        .heart::before {
-    
-          content: "";
-          background-color: hsl(350, 100%, 88%);
-          border-radius: 50%;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          top: -25px;
-          left: 0px;
-    
-        }
-    </style>
-
-    <div class="heart"></div>
-
---------------------------------------------
-
-    <style>
-
-        .balls {
-
-          border-radius: 50%;
-          position: fixed;
-          width: 50px;
-          height: 50px;
-          top: 60%;
-          animation-name: jump;
-          animation-duration: 2s;
-          animation-iteration-count: infinite;
-          z-index: 20;
-        }
-
-        #green {
-
-          background: green;
-          left: 20%;
-          top:85%;
-          animation-timing-function: cubic-bezier(0.6, 0.3, 0.6,1.6);
-          position:absolute;
-        }
-      
-        @keyframes jump {
-          50% {
-            top: 10%;
-          }
-        }
-
-    </style>
-                <div class="balls" id="green"></div>
-------------------------------------------------------
-
-
--->
