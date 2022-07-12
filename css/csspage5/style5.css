@@ -56,11 +56,10 @@
     
            margin-top: 20px;
            margin-bottom: 20px;
-           margin-left: auto;
-           margin-right: auto;
+           margin: 10px;
            border-style: inset;
            border-width: 8px;
-           border-color: rgba(32, 209, 194, 0.815);
+           border-color: rgb(249, 253, 1);
        
        }
 
@@ -83,7 +82,7 @@
         li {
 
             text-align: center;
-            font-size: 25px;
+            font-size: 30px;
 
         }
 

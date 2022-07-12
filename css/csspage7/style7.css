@@ -1,7 +1,7 @@
-body {
+    body {
         
     background: linear-gradient(75deg, hsl(199, 77%, 53%), hsl(198, 51%, 18%));
-
+        padding:auto;
     }
 
     ul {
@@ -10,8 +10,8 @@ body {
         color: green;
         list-style-type:upper-roman;
         list-style-position:inside;
-        padding: 10px 10px;
-        margin: 10px 10px;
+        padding: 10px;
+        margin: 20px;
         border: groove;
         border-width: 20px 20px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
@@ -23,9 +23,8 @@ body {
     li {
 
         text-align: center;
-        font-size: 25px;
-        
-
+        font-size: 30px;
+        padding: auto;        
     }
 
     li:hover { 
@@ -38,12 +37,10 @@ body {
 
         background-color:aqua;
 
-        
     }
 
     hr {
 
-       
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: auto;
@@ -53,3 +50,42 @@ body {
         border-color: rgba(32, 209, 194, 0.815);
 
     }
+
+  /**   main     values: center, flex-start, flex-end, space-between, space-around, or space-evenly.  justify-content or align-items 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-basis : look at my height /width replace relative with absolute values
+
+        The flex-grow, flex-shrink, and flex-basis
+        flex: 1 0 10px; will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.
+        order: 1; the order of how flex items appear in the flex container.
+  **/
+
+
+
+    .masterslave{
+
+        display: flex;
+        width: auto;
+        height: 500px;
+        background: red;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .master{
+        order: 2;
+        background: black;
+        height: 100px;
+        flex: 1 1 80px;
+    }
+    .slave{
+        order: 1;
+        background: gray;
+        height: 100px;
+        flex: 1 1 20px;
+
+    }
+
