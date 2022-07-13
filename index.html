@@ -37,6 +37,10 @@ Instead of using em or px to size text, you can use viewport units for responsiv
 linter Static program analysis
 formater
 
+ <form action="https://freecatphotoapp.com/submit-cat-photo">
+          
+        </form>
+
 -->
 
 <!DOCTYPE html>  
@@ -48,9 +52,9 @@ formater
         <title>Visurex's Website</title>
 
         <meta charset="utf-8">
-        <meta name="keywords"       content="Visurex,Virus-Mx">
-        <meta name="description"    content="Visurex's Website"/>
-        <meta name="author"         content="Visurex"/>
+        <meta name="keywords"    content="Visurex,Virus-Mx">
+        <meta name="description" content="Visurex's Website"/>
+        <meta name="author"      content="Visurex"/>
         
 
         <link rel="stylesheet" href="css/style.css">
@@ -68,13 +72,13 @@ formater
                 <nav class="fixedbox">i'am a fixed box</nav>
                 <nav id="header"><a href="#footer">Jump to bottom of page</a></nav>
 
-                <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="a Google link"></a>
-                <a href="https://www.facebook.com"  target="_blanc"><img src="/assets/images/Logos/facebook-logo-img.png"   width="115px" alt="a Facebook link"></a>
-                <a href="https://www.twitch.tv"     target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png"     width="90px"  alt="a Twitch link"></a>
-                <a href="https://www.twitter.com"   target="_blanc"><img src="/assets/images/Logos/twitter-img.png"         width="110px" alt="a Twitter link"></a> 
-                <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png"  width="110px" alt="a Instagram link"></a>
-                <a href="https://www.youtube.com"   target="_blanc"><img src="/assets/images/Logos/youtube-img.png"         width="160px" alt="a Youtube link"></a>
-                <a href="https://www.github.com/"   target="_blanc"><img src="/assets/images/Logos/github-img.png"          width="160px" alt="a Github link"></a>
+                <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="a link to Google"></a>
+                <a href="https://www.facebook.com"  target="_blanc"><img src="/assets/images/Logos/facebook-logo-img.png"   width="115px" alt="a link Facebook"></a>
+                <a href="https://www.twitch.tv"     target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png"     width="90px"  alt="a link Twitch"></a>
+                <a href="https://www.twitter.com"   target="_blanc"><img src="/assets/images/Logos/twitter-img.png"         width="110px" alt="a link Twitter"></a> 
+                <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png"  width="110px" alt="a link Instagram"></a>
+                <a href="https://www.youtube.com"   target="_blanc"><img src="/assets/images/Logos/youtube-img.png"         width="160px" alt="a link Youtube"></a>
+                <a href="https://www.github.com/"   target="_blanc"><img src="/assets/images/Logos/github-img.png"          width="160px" alt="a link Github"></a>
 
                 <ul>
                 
@@ -135,46 +139,87 @@ formater
 
                 <form>                  <!-- form for imputs logins post payment e mails passwords, checkboxes, radio's,  select drop downs , buttons more  -->
 
-                   <fieldset>
+                    <fieldset>
 
                         <legend>Choose a option</legend>
 
                         <label for="date">Your birth date:</label>
                         <input type="date" id="date"/>
-                        <input type="submit"/>                                      <br/>
+                        <input type="submit"/>                                      
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Type in your e mail adress</legend>
 
                         <label for="email">Email:</label>
                         <input type="email" id="email"/>
-                        <input type="submit"/>                                      <br/>
+                        <input type="submit"/>                                      
+                    
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>ranger</legend>
 
                         <label for="ranger">ranger: </label>
-                        <input type="range" id=ranger/>   <br/>
+                        <input type="range" id=ranger/>   
 
-                        <label for="importafile">import a file: </label>
-                        <input type="file" id="importafile"/>    <br/>
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>import a file:</legend>
+
+                        <label for="importAfile">import a file: </label>
+                        <input type="file" id="importAfile"/>
+
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Checkboxes buttons</legend>
 
                         <label for="checkboxes">Checkboxes buttons</label>
-                        <input type="checkbox"  id="checkboxes" name="Checkbox1"/>
-                        <input type="checkbox" id="checkboxes" name="Checkbox2"/>   <br/>
+                        <input type="checkbox"  id="checkboxes" name="Checkbox1" value="checkboxes" checked/>
+                        <input type="checkbox" id="checkboxes" name="Checkbox2"  value="checkboxes"/>
 
+                    </fieldset> 
+
+                    <fieldset>
+
+                        <legend>Radio button</legend>
+                    
                         <label for="radios">Radio button</label>
-                        <input type="radio" id="radios"/>
-                        <input type="radio" id="radios"/>                           <br/>
+                        <input type="radio" id="radios" name="indoor-outdoor" value="radios" checked/>
+                        <input type="radio" id="radios" name="indoor-outdoor" value="radios"/>
+                    
+                    </fieldset>
+
+                    <fieldset>
+
+                        <legend>Preferred seat type</legend>
 
                         <label for="seatType">Preferred seat type</label>
                         <select name="seatType" id="seatType">
                             <option value="0">No preference</option>
                             <option value="1">Aisle seat</option>
                             <option value="2">Window seat</option>
-                        </select>                                                   <br/>
+                        </select>
+
+                    </fieldset>
+
+                    <fieldset>
                         
+                        <legend>User Password</legend>
                         
                         <label for="userPassword"></label>
                         <input type="text"     id="userPassword" value="Enter your username"/>
                         <input type="password" id="userPassword" value="Enter password"/>
                        
-
                     </fieldset>
+                    <label for="loving">Loving</label>
+                    <input id="loving" type="checkbox" text="loving"> 
 
                 </form>
 
