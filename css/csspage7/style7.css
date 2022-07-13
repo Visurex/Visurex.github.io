@@ -56,36 +56,89 @@
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-evenly;
-        flex-basis : look at my height /width replace relative with absolute values
+        flex-basis : look at height /width replace relative with absolute values
 
         The flex-grow, flex-shrink, and flex-basis
         flex: 1 0 10px; will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;.
         order: 1; the order of how flex items appear in the flex container.
-  **/
+        flex: 1 1 20px;
+
+        flex-direction: row-reverse;        row or column
+        justify-content: center;            width
+        align-items: flex-end;              height
+
+        Une autre propriété que vous pouvez appliquer sur des éléments individuels est align-self.
+         Cette propriété accepte les mêmes valeurs que align-items, mais s'applique seulement à l'élément ciblé.
+         nowrap : Tous les éléments sont tenus sur une seule ligne.
+        flex-wrap :wrap Les éléments s'enveloppent sur plusieurs lignes au besoin.
+        wrap-reverse : Les éléments s'enveloppent sur plusieurs lignes dans l'ordre inversé.
+
+        Les deux propriétés flex-direction et flex-wrap sont utilisées tellement souvent ensembles que le raccourci flex-flow a été créé pour les combiner. 
+        Ce raccourci accepte les valeurs des deux propriétés séparées par un espace.
+
+        Par exemple, vous pouvez utiliser flex-flow: row wrap pour configurer les colonnes et les faire s'envelopper.
+
+        flex-flow: column wrap;
+        ----------------------------------
+
+        Vous pouvez utiliser align-content pour définir comment plusieurs lignes sont espacées de l'une à l'autre. Cette propriété prend les valeurs suivantes :
+
+        flex-start : Les lignes sont amassées dans le haut du conteneur.
+        flex-end: Les lignes sont amassées dans le bas du conteneur.
+        center : Les lignes sont amassées dans le centre vertical du conteneur.
+        space-between : Les lignes s'affichent avec un espace égal entre eux.
+        space-around : Les lignes s'affichent avec un espace égal autour d'eux.
+        stretch : Les lignes sont étirées pour s'adapter au conteneur.
+        Ceci peut être déroutant, mais align-content détermine l'espace entre les lignes,
+         alors que align-items détermine comment les éléments dans leur ensemble sont alignées à l'intérieur du conteneur.
+         Quand il n'y a qu'une seule ligne, align-content n'a aucun effet.
+
+         flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-content: space-between;
+              **/   
 
 
 
     .masterslave{
 
-        display: flex;
-        width: auto;
-        height: 500px;
-        background: red;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-evenly;
+        display:flex;
+        position:relative;
+        width: 50vw;
+        height: 50vw;
+        background: black;
+        flex-wrap:nowrap;
+        flex-direction: row;
+        justify-content:center;
+        color: yellow;
+        
     }
     .master{
-        order: 2;
-        background: black;
-        height: 100px;
-        flex: 1 1 80px;
+
+        position: absolute;
+        background: red;
+        margin:300px;
+        height: 10vw;
+        font-size: 30px;
     }
     .slave{
-        order: 1;
+        
+        position: absolute;
+        margin:300px;
         background: gray;
-        height: 100px;
-        flex: 1 1 20px;
+        height: 10vw;
+        font-size: 30px;
 
     }
 
+    .text{
+
+       position: absolute;
+        background:purple;
+        color:yellow;
+        font-size: 30px;
+        height:10vw;
+        margin:200px;
+
+    }

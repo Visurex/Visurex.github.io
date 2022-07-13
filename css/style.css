@@ -23,46 +23,7 @@
    
     }
 
-    h2 {
 
-        font-size: 40px;
-        color: hsl(123, 72%, 44%);
-        font-family:'monospace', Courier, monospace;
-        text-align: center;
-
-    }
-
-    h3 {
-
-        font-size: 35px;
-        color: black;
-        text-align:center;
-        background-color:aquamarine
-    }
-
-    h4 {
-
-        font-size: 35px;
-        color: hsl(0, 93%, 52%);
-        text-align:center;
-        background-color:aqua
-    }
-
-    h5{
-
-        font-size: 35px;
-        color: rgb(226, 41, 41);
-        text-align: center;
-
-    }
-
-    h6{
-
-        font-size: 35px;
-        color: hsl(110, 100%, 49%);
-        text-align: center;
-
-    }
 
     p {
 
@@ -180,14 +141,49 @@
         color:green;
         background-color: yellow;
         border-color: red;
-        
-        
-        
+  
     }
 
     .fixedbox:hover:after{
 
         content:" I should be on top of everything elst";
         
+    }
+
+    .sectionh {
+        color:yellow;
+        background-color: gray;
+        height: 800px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        justify-content:space-around;
+        align-items:center;
+    }
+
+    .sectionh1{
+
+        background: black;
+        width:300px ;
+        height:100px;
+        font-size:20px;
+        
+        
+    }
+    .sectionh2{
+
+        background: green;
+        width:300px ;
+        height:100px;
+        font-size:20px;
+        
+    }
+    .sectionh3{
+
+        background: red;
+        width:300px ;
+        height:100px;
+        font-size:20px;
         
     }
