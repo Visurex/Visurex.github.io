@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -10,9 +10,7 @@
         <meta name="author"      content="Visurex"/>
     </head>
     <header>
-
-        <nav> 
-        
+        <nav>        
             <nav id="header"><a href="#footer">Jump to bottom of page</a></nav>
 
             <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="sould be a image"></a>
@@ -33,8 +31,34 @@
                 <li><a href="/html/page7.html" >Flex/grid Designe</a></li>
                 <li><a href="/html/page8.html" >java script</a></li>
             </ul>
-
         </nav>
-
     </header>
+    <body><!--     java script         -->  
+        <h1 id="title">Hello World !</h1>
+        <p class="myClass">hello</p>
+        <p class="myClass">world</p>          
+        <script>
+
+            console.log(window);
+            console.log(document);
+            console.log(document.documentURI);
+            // selectioner par son ID
+            let title = document.getElementById("title")
+            let title2 = document.getElementById("title2")
+            //reupere uniquement le TEXT
+            console.log(title.innerText);
+            //recupere uniquement le HTML
+            console.log(title.innerHTML);
+           //Modifier contenu TEXT pas les tag
+           title.innerText = "<em> Visurex's java's page</em>";
+           //Modifier contenu HTML
+          // title2.innerHTML = "<strong> Visurex's java's page</strong>";
+           //selectioner par class css
+           let myClass = document.getElementsByClassName("myClass")
+
+           
+            
+            
+        </script>
+    </body>
 </html>
