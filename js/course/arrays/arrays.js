@@ -1,5 +1,6 @@
 
-/*          Array's         */
+          /*          Array's         */
+/* It is a common practice to declare arrays with the const */
 
 const arraay = ["hey",["how",["third",["fourth",["fifth"],"fourth2"],"third2"],"yaw"],"your","doing"];
 
@@ -122,9 +123,8 @@ const removedFromMyArray = myArrayyyyy.pop();
 console.log(removedFromMyArray);
 
 /* Manipulate Arrays With shift()
-pop() always removes the last element of an array. What if you want to remove the first?
-
-It works just like .pop(), except it removes the first element instead of the last.
+It works just like .pop(), except it removes the first element instead 
+of the last.
 The shift() method removes the first item of an array.
 The shift() method changes the original array.
 The shift() method returns the shifted element. */
@@ -180,3 +180,25 @@ console.log(unShift);
 unShift.unshift("1");
 console.log(unShift)
 //------------------------
+array[0] = "toyota";
+array[1] = "mitsubishi";
+array[2] = "peugeot";
+
+console.log(array);
+
+array.push("hello");
+
+console.log(array);
+
+arrayPop = array.pop();
+console.log(array);
+
+console.log(arrayPop);
+console.log(array);
+
+arrayShift  = array.shift()
+console.log(array)
+console.log(arrayShift)
+
+array.unshift("toyota")
+console.log(array)
