@@ -31,6 +31,10 @@ undefined, null, boolean, string, symbol, bigint, number, and object.
 **=	    x **= y	    x = x ** y
 */
 
+
+
+
+console.log(result);
 let x = 0.2 + 0.1;
 let u = (0.2 * 10 + 0.1 * 10) / 10;
   
@@ -41,10 +45,10 @@ let d = false;
 
 a = "a" + " " + "e";
 
-console.log(a)
-console.log(b)
-console.log(c)
-console.log(d,c,b,a)
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d,c,b,a);
 let myVar1 = 1;
 myVar1 += 5;
 
@@ -55,7 +59,7 @@ myVar3 *= 5;
 let myVar4 = 1;
 myVar4 /= 5;
 
-console.log(myVar1,myVar2,myVar3,myVar4)
+console.log(myVar1,myVar2,myVar3,myVar4);
 /* 
         ESCAPING CARACTERS      concatenation = a series of interconnected things
 
@@ -68,60 +72,78 @@ console.log(myVar1,myVar2,myVar3,myVar4)
 \b	word boundary
 \f	form feed */
 
-// in JavaScript, String values are immutable, which means that they cannot be altered once created
+//String values are immutable, which means that they cannot be altered once created
+
+//string: single & double quotes.
 
 const doubleQuoteStr = "This is a string"; 
 const singleQuoteStr = 'This is also a string';
 
-console.log(doubleQuoteStr, singleQuoteStr)
+console.log(doubleQuoteStr, singleQuoteStr);
 
-var e 
-e = "i need a \"saw\" to cut three's"
+//escaping caracter: carriage return , new line.
 
-console.log(e)
+var e;
+e = "my string\n" + " " + "\rsecond string";
+ 
+console.log(e);
 
-var e = " need to space \n\tit out \n\t\there   and \n\t\there "
+//escaping caracter: word boundary.
+
+var string ="hello to you !";
+var regExp = RegExp(/\bto\b/,'g');
+var result = string.match(regExp);
+
+//escaping caracter: double quotes.
+
+var e;
+e = "i need a \"saw\" to cut three's";
+
+console.log(e);
+
+//escaping caracter: \n new line \t tab.
+
+var e = " need to space \n\tit out \n\t\there   and \n\t\there ";
 const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"';
 
-console.log(e)
-console.log(e.length)
-console.log(goodStr)
+console.log(e);
+console.log(e.length);
+console.log(goodStr);
 
-var e = " hey this 'is' it  "
-console.log(e)
-// You can find the length of a String value by writing .length after the string variable or string literal.
-var e = "i need a number"
-console.log(e.length)
+//You can find the length of a String value by writing .length after the string variable or string literal.
 
-var e = "i need a number" + " i need a second number"
-console.log(e.length)
+var e = "i need a number";
+console.log(e.length);
 
-// the space character between caracters is also counted 
+var e = "i need a number" + " i need a second number";
+console.log(e.length);
 
-var v = "Visurex"
-console.log (v.length)
-console.log("Visurex".length,e)
+//the space character between caracters is also counted.
 
-// Use Bracket Notation to Find the First Character in a String 
-console.log(v[5])
+var v = "Visurex";
+console.log (v.length);
+console.log("Visurex".length,e);
 
-v = "Visurex" + " " + "Virus-Mx";
+// Use Bracket Notation to Find the First Character in a String.
 
-console.log(v)
-// Use Bracket Notation to Find the Nth Character in a String
-console.log(v.charAt(500)) 
-console.log(v.charAt(15))
+console.log(v[5]);
 
-// you can get the value of the last letter of the string by using
-var firstNamee ="ada"
+// Use Bracket Notation to Find the Nth Character in a String.
 
-console.log(firstNamee[firstNamee.length - 1])
+console.log(v.charAt(500));
+console.log(v.charAt(15));
 
-firstNamee = firstNamee[firstNamee.length - 1]
+// you can get the value of the last letter of the string by using.
 
-console.log(firstNamee)
+var firstNamee ="ada";
 
-// fill empty spaces with variables
+console.log(firstNamee[firstNamee.length - 1]);
+
+firstNamee = firstNamee[firstNamee.length - 1];
+
+console.log(firstNamee);
+
+// fill empty spaces with variables.
 
 const myNoun = "dog";
 const myAdjective = "big";
@@ -129,7 +151,7 @@ const myVerb = "ran";
 const myAdverb = "quickly";
 
 const wordBlanks = "blabla " + myNoun + " blabla " + myAdjective + " blalla " + myVerb + " blabla " + myAdverb + " .";
-console.log(wordBlanks)
+console.log(wordBlanks);
 
 const hey = "hey";
 const how = "how";
@@ -138,20 +160,21 @@ const namee= "name";
 
 const myWord = hey + " my\n" + namee + " is " + v;
 
-console.log(myWord)
+console.log(myWord);
 
 let myString = "This is the first sentence. ";
 myString += "This is the second sentence.";
 let myString22 = "This is the third sentence.";
-console.log(myString,myString22)
+console.log(myString,myString22);
 
 const someAdjective = "Learning to code on freecodecam ";
 let myStrcode = " is fucked up";
 
 myStrcode += someAdjective;
 
-console.log(myStrcode)
-// for counting string
+console.log(myStrcode);
+
+// for counting string.
 
 let lastNameLength = 0;
 const lastName = "Lovelace";
@@ -160,13 +183,14 @@ lastNameLength = lastName.length;
 
 console.log(lastNameLength);
 
-// for finding a caracter of string
-let  firstLetterOfLastName 
-const lastNameletter = "lovelace"
+// for finding a caracter of string.
 
-firstLetterOfLastName = lastNameletter[1]
+let  firstLetterOfLastName;
+const lastNameletter = "lovelace";
 
-console.log(firstLetterOfLastName)
+firstLetterOfLastName = lastNameletter[1];
+
+console.log(firstLetterOfLastName);
 
 
 
