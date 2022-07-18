@@ -23,8 +23,6 @@ ourArray[0] = 15;
 
 const arry = ["first",["third"],"second"];
 
-//-------------------------------
-
 arry[0] = "50";
 console.log(arry[0]);
 console.log(arry);
