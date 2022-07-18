@@ -1,66 +1,4 @@
-/* FUNCTIONS */
-
 /*
-Write Reusable JavaScript with Functions
-In JavaScript, we can divide up our code into reusable parts called functions.
-
-Here's an example of a function:
-
-function functionName() {
-  console.log("Hello World");
-}
-You can call or invoke this function by using its name followed by parentheses, like this: functionName(); 
-Each time the function is called it will print out the message Hello World on the dev console. 
-All of the code between the curly braces will be executed every time the function is called.
--------------------------------
-
-Passing Values to Functions with Arguments
-Parameters are variables that act as placeholders for the values that are to be input to a function when it is called.
- When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when
-  it is called are known as arguments.
-
-Here is a function with two parameters, param1 and param2:
-
-function testFun(param1, param2) {
-  console.log(param1, param2);
-}
-Then we can call testFun like this: testFun("Hello", "World");. We have passed two string arguments,
- Hello and World. Inside the function, param1 will equal the string Hello and param2 will equal the string World.
-  Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
-
-  -------------------
-Return a Value from a Function with Return
-We can pass values into a function with arguments. You can use a return statement to send a value back out of a function.
-
-Example
-
-function plusThree(num) {
-  return num + 3;
-}
-
-const answer = plusThree(5);
-answer has the value 8.
-
-plusThree takes an argument for num and returns a value equal to num + 3
-
---------------------
-JavaScript Algorithms and Data Structures
-Basic JavaScript
-Global Scope and Functions
-In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
-
-Variables which are declared without the let or const keywords are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with let or const.
-
-Using let or const, declare a global variable named myGlobal outside of any function. Initialize it with a value of 10.
-
-
-let myGlobal = 10;
-function fun1() {
-
-oopsGlobal = 5;
-}
-
-
 
 function fun2() {
   var output = "";
@@ -130,18 +68,49 @@ will call the sum function, which returns a value of 17 and assigns it to the ou
 
 --------------------------
 */
+        /* FUNCTIONS */
 
-function reusableFunction(){
-    console.log("Hi World");
-  }
-  
-  reusableFunction();
+
+/* 
+   Passing Values to Functions with Arguments
+   Parameters are variables that act as placeholders for the values that are to
+    be input to a function when it is called.
+    When a function is defined, it is typically defined along with one or more parameters.
+   The actual values that are input (or "passed") into a function when
+   it is called are known as arguments.
+   Then we can call testFun like this: testFun("Hello", "World");.
+    We have passed two string arguments, Hello and World.
+    Inside the function, param1 will equal the string Hello and param2 
+    will equal the string World.
+  Note that you could call testFun again with different arguments and the
+   parameters would take on the value of the new arguments.
+*/
+    function functionName() {
+      console.log("Hello World");
+    }
+
+    functionName()
+    functionName()
+
+//plusThree takes an argument for num and returns a value equal to num + 3
+
+    function plusThree(num) {
+      return num + 3;
+     }
+    const ansswer = plusThree(5);
+    console.log(ansswer)
+
+//-----------------------------------
 
   function functionWithArgs(a,b){
 
     console.log(a + b)
   }
-  
+  /*
+    Return a Value from a Function with Return
+    We can pass values into a function with arguments.
+    You can use a return statement to send a value back out of a function.
+  */
   functionWithArgs(10,5)
 
   function timesFive(num){
@@ -163,12 +132,12 @@ function reusableFunction(){
   
   const outerWear = "T-Shirt";
 
-function myOutfit() {
+  function myOutfit() {
 
-  var outerWear = "sweater";
+    var outerWear = "sweater";
 
-  return outerWear;
-}
+    return outerWear;
+  }
 
 myOutfit();
 console.log(myOutfit())
