@@ -31,9 +31,6 @@ undefined, null, boolean, string, symbol, bigint, number, and object.
 **=	    x **= y	    x = x ** y
 */
 
-
-
-
 console.log(result);
 let x = 0.2 + 0.1;
 let u = (0.2 * 10 + 0.1 * 10) / 10;
@@ -60,6 +57,28 @@ let myVar4 = 1;
 myVar4 /= 5;
 
 console.log(myVar1,myVar2,myVar3,myVar4);
+
+// Template Literals is an ES6 feature
+// Template Literals use back-ticks (``) rather than the quotes ("" or '') to define a string:
+// Template literals provide an easy way to interpolate variables and expressions into strings.
+// With template literals, you can use both single and double quotes inside a string
+// Template literals allow variables in strings: ${hi} ${...}
+// Template literals allow expressions in strings: 
+// Automatic replacing of expressions with real values 
+// The method is called string interpolation.
+// alt + 96 = `  
+
+let hi = "misss"
+let texxtt =
+`The quick ${hi}
+          brown fox
+   jumps over ${2+3}
+      the lazy dog`;
+
+console.log(texxtt)
+
+
+
 /* 
         ESCAPING CARACTERS      concatenation = a series of interconnected things
 
