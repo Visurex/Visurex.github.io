@@ -31,32 +31,32 @@ undefined, null, boolean, string, symbol, bigint, number, and object.
 **=	    x **= y	    x = x ** y
 */
 
-console.log(result);
-let x = 0.2 + 0.1;
-let u = (0.2 * 10 + 0.1 * 10) / 10;
-  
-let a = "a" ;
-let b = 5;
-let c = true;
-let d = false;
+        console.log(result);
+        let x = 0.2 + 0.1;
+        let u = (0.2 * 10 + 0.1 * 10) / 10;
 
-a = "a" + " " + "e";
+        let a = "a" ;
+        let b = 5;
+        let c = true;
+        let d = false;
 
-console.log(a);
-console.log(b);
-console.log(c);
-console.log(d,c,b,a);
-let myVar1 = 1;
-myVar1 += 5;
+        a = "a" + " " + "e";
 
-let myVar2 = 1;
-myVar2 -= 5;
-let myVar3 = 1;
-myVar3 *= 5;
-let myVar4 = 1;
-myVar4 /= 5;
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d,c,b,a);
+        let myVar1 = 1;
+        myVar1 += 5;
 
-console.log(myVar1,myVar2,myVar3,myVar4);
+        let myVar2 = 1;
+        myVar2 -= 5;
+        let myVar3 = 1;
+        myVar3 *= 5;
+        let myVar4 = 1;
+        myVar4 /= 5;
+
+        console.log(myVar1,myVar2,myVar3,myVar4);   
 
 // Template Literals is an ES6 feature
 // Template Literals use back-ticks (``) rather than the quotes ("" or '') to define a string:
@@ -95,10 +95,10 @@ console.log(texxtt)
 
 //string: single & double quotes.
 
-const doubleQuoteStr = "This is a string"; 
-const singleQuoteStr = 'This is also a string';
-
-console.log(doubleQuoteStr, singleQuoteStr);
+        const doubleQuoteStr = "This is a string"; 
+        const singleQuoteStr = 'This is also a string';
+        
+        console.log(doubleQuoteStr, singleQuoteStr);
 
 //escaping caracter: carriage return , new line.
 

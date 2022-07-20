@@ -1,14 +1,14 @@
         /* FUNCTIONS */
 
 
-/* 
-   Passing Values to Functions with Arguments
-   Parameters are variables that act as placeholders for the values that are to
-    be input to a function when it is called.
-    When a function is defined, it is typically defined along with one or more parameters.
-   The actual values that are input (or "passed") into a function when
-   it is called are known as arguments.
-*/
+
+// Passing Values to Functions with Arguments
+// Parameters are variables that act as placeholders for the values that are to
+// be input to a function when it is called.
+// When a function is defined, it is typically defined along with one or more parameters.
+// The actual values that are input (or "passed") into a function when
+// it is called are known as arguments.
+
     function functionName() {
       console.log("Hello World");
     }
@@ -32,11 +32,11 @@
   }
 
   functionWithArgs(10,5)
-  /*
-     Return a Value from a Function with Return
-     We can pass values into a function with arguments.
-     You can use a return statement to send a value back out of a function.
-  */
+
+// Return a Value from a Function with Return
+// We can pass values into a function with arguments.
+// You can use a return statement to send a value back out of a function.
+
 
   function timesFive(num){
 
@@ -57,22 +57,7 @@
   }
 
   myLocalScope();
-
-  //--------------------------------------
-  /* Here is a function myTest with a local variable called loc.
-
-  The myTest() function call will display the string foo in the console.
-  The console.log(loc) line (outside of the myTest function) will throw an error,
-  as loc is not defined outside of the function. */
-
-  function myTest() {
-    const loc = "foo";
-    console.log(loc);
-  }
   
-  myTest();
-  console.log(loc);
-
   //----------------------------------------------
 
   const outerWear = "T-Shirt";
@@ -105,13 +90,11 @@
     addThree();
     addFive();
 
-/*        Global vs. Local Scope in Functions
-It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
-
-In this example:
-
-
-The function myFun will return the string Head because the local version of the variable is present.*/
+// Global vs. Local Scope in Functions
+// It is possible to have both local and global variables with the same name.
+// When you do this, the local variable takes precedence over the global variable.
+// In this example:
+// The function myFun will return the string Head because the local version of the variable is present.
 
 const someVar = "Hat";
 
@@ -134,41 +117,15 @@ function processArg(num) {
 processed = processArg(7);
 
 console.log(processed)
-/*
-Understanding Undefined Value returned from a Function
-A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement,
- when you call it, the function processes the inner code but the returned value is undefined.
 
-Example
+    //Stand in Line  wtf ???? 
+//Stand in Line
+//In Computer Science a queue is an abstract Data Structure where items are kept in order.
+//New items can be added at the back of the queue and old items are taken off from the front of the queue.
+//Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
+//Add the number to the end of the array, then remove the first element of the array.
+//The nextInLine function should then return the element that was removed.
 
-
-addSum is a function without a return statement.
- The function will change the global sum variable but the returned value of the function is undefined.*/
- 
-let summ = 0;
-
-function addSum(num) {
-  sum = summ+ num;
-}
-
-console.log(addSum(3));
-
-
-/*Stand in Line  wtf ???? 
-
-
-Stand in Line
-In Computer Science a queue is an abstract Data Structure where items are kept in order.
-New items can be added at the back of the queue and old items are taken off from the front of the queue.
-
-Write a function nextInLine which takes an array (arr) and a number (item) as arguments.
-
-Add the number to the end of the array, then remove the first element of the array.
-
-The nextInLine function should then return the element that was removed.
-
-
-*/ 
 
 function nextInLine(arr, item) {
     
@@ -187,19 +144,19 @@ function nextInLine(arr, item) {
 
 
 
-  /*        if statement
-Use Conditional Logic with If Statements
-if statements are used to make decisions in code.
- The keyword if tells JavaScript to execute the code in the curly braces under certain conditions,
-  defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
-   When the condition evaluates to true, the program executes the statement inside the curly braces.
-    When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.*/
+//   if statement
+//Use Conditional Logic with If Statements
+// if statements are used to make decisions in code.
+//  The keyword if tells JavaScript to execute the code in the curly braces under certain conditions,
+//   defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
+//    When the condition evaluates to true, the program executes the statement inside the curly braces.
+//     When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.*/
 
-/*        Booleans
- may only be one of two values: true or false.
-  They are basically little on-off switches, where true is on and false is off.
-   These two states are mutually exclusive.
-*/
+//      Booleans
+// may only be one of two values: true or false.
+//  They are basically little on-off switches, where true is on and false is off.
+//   These two states are mutually exclusive.
+
 
 function trueOrFalse(wasThatTrue) {
   
@@ -212,54 +169,51 @@ function trueOrFalse(wasThatTrue) {
   console.log(trueOrFalse(true));
   console.log(trueOrFalse(false));
 
-/*  equality operator 
-Comparison with the Equality Operator
+//  equality operator 
+//Comparison with the Equality Operator
 
-There are many comparison operators in JavaScript. All of these operators return a boolean true or false value.
+//There are many comparison operators in JavaScript. All of these operators return a boolean true or false value.
 
-The most basic operator is the equality operator ==.
- The equality operator compares two values and returns true if they're equivalent or false if they are not.
-  Note that equality is different from assignment (=), which assigns the value on the right of the operator to
-   a variable on the left.
+//The most basic operator is the equality operator ==.
+// The equality operator compares two values and returns true if they're equivalent or false if they are not.
+//  Note that equality is different from assignment (=), which assigns the value on the right of the operator to
+//   a variable on the left.
 
+//If myVal is equal to 10, the equality operator returns true,
+// so the code in the curly braces will execute, and the function will return Equal.
+//  Otherwise, the function will return Not Equal. In order for JavaScript to compare two different data types
+//   (for example, numbers and strings), it must convert one type to another. This is known as Type Coercion.
 
-If myVal is equal to 10, the equality operator returns true,
- so the code in the curly braces will execute, and the function will return Equal.
-  Otherwise, the function will return Not Equal. In order for JavaScript to compare two different data types
-   (for example, numbers and strings), it must convert one type to another. This is known as Type Coercion.
-*/
-
-
-function testEqual(val) {
-  if (val == 12) { 
-    return "Equal";
+  function testEqual(val) {
+    if (val == 12) { 
+      return "Equal";
+    }
+    return "Not Equal";
   }
-  return "Not Equal";
-}
 
-console.log(testEqual(12));
+  console.log(testEqual(12));
 
-//---------------------------------------
+  //---------------------------------------
 
-function testStrict(val) {
-  if (val === 7) { 
-    return "Equal";
+  function testStrict(val) {
+    if (val === 7) { 
+      return "Equal";
+    }
+    return "Not Equal";
   }
-  return "Not Equal";
-}
 
-console.log(testStrict(10));
+  console.log(testStrict(10));
 
-//-----------------------------------------
+  //-----------------------------------------
 
-function compareEquality(a, b) {
-  if (a === b) {
-    return "Equal";
+  function compareEquality(a, b) {
+    if (a === b) {
+      return "Equal";
+    }
+    return "Not Equal";
   }
-  return "Not Equal";
-}
 
-console.log(compareEquality(10, "10"));
+  console.log(compareEquality(10, "10"));
 
 
 // In the last two challenges, we learned about the equality operator (==) and the strict equality operator (===).
@@ -283,3 +237,210 @@ console.log(compareEquality(10, "10"));
     }
     console.log(output);
   };
+
+// Comparison with the Inequality Operator
+// The inequality operator (!=) is the opposite of the equality operator.
+// It means not equal and returns false where equality would return true and vice versa.
+//  Like the equality operator, the inequality operator will convert data types of values while comparing.
+
+// Comparison with the Strict Inequality Operator
+// The strict inequality operator (!==) is the logical opposite of the strict equality operator. It means "Strictly Not Equal" and returns false where strict equality would return true and vice versa. The strict inequality operator will not convert data types.
+
+  function testStrictNotEqual(val) {
+    if (val !== 17) { 
+      return "Not Equal";
+    }
+    return "Equal";
+  }
+
+  console.log(testStrictNotEqual(10));
+  
+// Comparison with the Greater Than Operator
+//  The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right,
+//   it returns true. Otherwise, it returns false.
+
+//  Like the equality operator, the greater than operator will convert data types of values while comparing.
+
+
+  function testGreaterThan(val) {
+    if (val > 100) {  // Change this line
+      return "Over 100";
+    }
+
+    if (val > 10) {  // Change this line
+      return "Over 10";
+    }
+
+    return "10 or Under";
+  }
+
+  console.log(testGreaterThan(10));
+
+//--------------------------------------
+
+  function testGreaterOrEqual(val) {
+    if (val >= 20) {  
+      return "20 or Over";
+    }
+
+    if (val >= 10) {  
+      return "10 or Over";
+    }
+
+    return "Less than 10";
+  }
+
+  console.log(testGreaterOrEqual(25));
+
+// Comparison with the Less Than Operator
+//  The less than operator (<) compares the values of two numbers.
+//   If the number to the left is less than the number to the right,
+//    it returns true. Otherwise, it returns false. Like the equality operator,
+//     the less than operator converts data types while comparing.
+
+  function testLessThan(val) {
+    if (val < 25) { 
+      return "Under 25";
+    }
+
+    if (val < 55) { 
+      return "Under 55";
+    }
+
+    return "55 or Over";
+  }
+
+  console.log(testLessThan(10));
+ 
+// Comparison with the Less Than Or Equal To Operator
+//  The less than or equal to operator (<=) compares the values of two numbers.
+//   If the number to the left is less than or equal to the number to the right, it returns true.
+//    If the number on the left is greater than the number on the right, it returns false.
+
+  function testLessOrEqual(val) {
+    if (val <= 12) { 
+      return "Smaller Than or Equal to 12";
+    }
+
+    if (val <= 24) { 
+      return "Smaller Than or Equal to 24";
+    }
+
+    return "More Than 24";
+  }
+
+console.log(testLessOrEqual(10));
+
+// The same logic can be written as:
+
+  function testLogicalAnd(val) {
+
+    if (val <= 50 && val >= 25) {
+
+        return "Yes";  
+    }
+    return "No";
+  }
+
+console.log(testLogicalAnd(10));
+
+// omparisons with the Logical Or Operator
+// The logical or operator (||) returns true if either of the operands is true. Otherwise, it returns false.
+
+  function testLogicalOr(val) {
+  
+    if (val < 10 || val > 20) {
+      return "Outside";
+    }
+
+    return "Inside";
+  }
+
+  console.log(testLogicalOr(15));
+
+    /*Introduing Else Statements*/
+
+// Introducing Else Statements
+// When a condition for an if statement is true,
+// the block of code following it is executed. What about when that condition is false? 
+//  Normally nothing would happen. With an else statement,an alternate block of code can be executed.
+
+
+  function testElse(val) {
+    let result = "";
+
+    if (val > 5) {
+      result = "Bigger than 5";
+    } else {
+      result = "5 or Smaller";
+    }
+
+    return result;
+  }
+
+  console.log(testElse(4));
+
+
+        // Introducing Else If Statements  //
+// If you have multiple conditions that need to be addressed, you can chain if statements together with else if statements
+
+  function test(num){
+
+    if (num > 10){
+      return "greater than 10";
+    } else if (num == 10){
+      return "equal to 10";
+    } else if (num < 10){
+      return "smaller than 10";
+    } else{
+      return "not in the range";
+    }
+
+    }
+    console.log(test(10));
+
+// Logical Order in If Else Statements
+//  Order is important in if, else if statements.
+//   The function is executed from top to bottom so you will want to be careful of what statement comes first.
+
+  function testSize(num){
+    if (num < 5){
+        return "tiny";
+    } else if (num < 10){
+        return "small";
+    } else if (num < 15){
+        return "medium";
+    } else if (num < 20){
+        return "large"
+    } else if (num >= 20){
+        return "huge"
+    } else{
+        return "change me"
+    }
+    }
+      console.log(testSize(5))
+
+  // -------------------------------------------
+
+  const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+    function golfScore(par, strokes) {
+
+      if (strokes == 1){
+        return names[0];
+      } else if (strokes <= par -2){
+        return names[1];
+      } else if (strokes == par -1){
+        return names[2];
+      } else if (strokes == par){
+        return names[3];
+      } else if (strokes == par +1){
+        return names[4];
+      } else if (strokes == par +2){
+        return names[5];
+      } else if (strokes  >= +3){
+        return names[6];
+      } else
+        return "Change Me";
+    }
+    console.log(golfScore(4, 1));
