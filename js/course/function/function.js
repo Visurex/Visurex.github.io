@@ -185,7 +185,95 @@ function nextInLine(arr, item) {
   console.log(nextInLine(testArr, 6));
   console.log("After: " + JSON.stringify(testArr));
 
-  /* function fun2() {
+
+
+  /*        if statement
+Use Conditional Logic with If Statements
+if statements are used to make decisions in code.
+ The keyword if tells JavaScript to execute the code in the curly braces under certain conditions,
+  defined in the parentheses. These conditions are known as Boolean conditions and they may only be true or false.
+   When the condition evaluates to true, the program executes the statement inside the curly braces.
+    When the Boolean condition evaluates to false, the statement inside the curly braces will not execute.*/
+
+/*        Booleans
+ may only be one of two values: true or false.
+  They are basically little on-off switches, where true is on and false is off.
+   These two states are mutually exclusive.
+*/
+
+function trueOrFalse(wasThatTrue) {
+  
+  if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+  } 
+
+  console.log(trueOrFalse(true));
+  console.log(trueOrFalse(false));
+
+/*  equality operator 
+Comparison with the Equality Operator
+
+There are many comparison operators in JavaScript. All of these operators return a boolean true or false value.
+
+The most basic operator is the equality operator ==.
+ The equality operator compares two values and returns true if they're equivalent or false if they are not.
+  Note that equality is different from assignment (=), which assigns the value on the right of the operator to
+   a variable on the left.
+
+
+If myVal is equal to 10, the equality operator returns true,
+ so the code in the curly braces will execute, and the function will return Equal.
+  Otherwise, the function will return Not Equal. In order for JavaScript to compare two different data types
+   (for example, numbers and strings), it must convert one type to another. This is known as Type Coercion.
+*/
+
+
+function testEqual(val) {
+  if (val == 12) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(testEqual(12));
+
+//---------------------------------------
+
+function testStrict(val) {
+  if (val === 7) { 
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(testStrict(10));
+
+//-----------------------------------------
+
+function compareEquality(a, b) {
+  if (a === b) {
+    return "Equal";
+  }
+  return "Not Equal";
+}
+
+console.log(compareEquality(10, "10"));
+
+
+// In the last two challenges, we learned about the equality operator (==) and the strict equality operator (===).
+
+// If the values being compared are not of the same type, the equality operator will perform a type conversion,
+// and then evaluate the values. However, the strict equality operator will compare both the data type and value as-is,
+//  without converting one type to the other.
+//   Note: In JavaScript, you can determine the type of a variable or a value with the typeof operator, as follows:
+//    typeof 3
+//     typeof '3'
+//       typeof 3 returns the string number, and typeof '3' returns the string string.
+
+
+ function fun2() {
     var output = "";
     if (typeof myGlobal != "undefined") {
       output += "myGlobal: " + myGlobal;
@@ -194,5 +282,4 @@ function nextInLine(arr, item) {
       output += " oopsGlobal: " + oopsGlobal;
     }
     console.log(output);
-  }
-  */
+  };
