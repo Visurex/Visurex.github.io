@@ -51,6 +51,31 @@
 
     }
 
+    .sectionh1{
+
+        background: black;
+        width:300px ;
+        height:100px;
+        font-size:20px;
+        
+        
+    }
+    .sectionh2{
+
+        background: green;
+        width:300px ;
+        height:100px;
+        font-size:20px;
+        
+    }
+    .sectionh3{
+
+        background: red;
+        width:300px ;
+        height:100px;
+        font-size:20px;
+        
+    }
   /**   main     values: center, flex-start, flex-end, space-between, space-around, or space-evenly.  justify-content or align-items 
         display: flex;
         flex-wrap: nowrap;

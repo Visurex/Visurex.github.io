@@ -1,13 +1,14 @@
-function firstFunction(num){
-        return num *5;
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
 }
 
-var hey = firstFunction(12)
 
-console.log(hey)
-
-let myGlobal = 10;
-function fun1() {
-
-oopsGlobal = 5;
+function addFive(){
+  sum = sum + 5;
+  return sum;
 }
+
+addThree();
+addFive(5);

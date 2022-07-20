@@ -8,57 +8,48 @@
         <meta name="keywords"    content="Visurex,Virus-Mx">
         <meta name="description" content="Visurex's Website"/>
         <meta name="author"      content="Visurex"/>
+        <script type="text/javascript" src="/js/course/dom/dom.js"></script>
     </head>
-    <header>
-        <nav>        
-            <nav id="header"><a href="#footer">Jump to bottom of page</a></nav>
 
-            <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="sould be a image"></a>
-            <a href="https://www.facebook.com"  target="_blanc"><img src="/assets/images/Logos/facebook-logo-img.png"   width="115px" alt="sould be a image"></a>
-            <a href="https://www.twitch.tv"     target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png"     width="90px"  alt="sould be a image"></a>
-            <a href="https://www.twitter.com"   target="_blanc"><img src="/assets/images/Logos/twitter-img.png"         width="110px" alt="sould be a image"></a> 
-            <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png"  width="110px" alt="sould be a image"></a>
-            <a href="https://www.youtube.com"   target="_blanc"><img src="/assets/images/Logos/youtube-img.png"         width="160px" alt="sould be a image"></a>
-            <a href="https://www.github.com/"   target="_blanc"><img src="/assets/images/Logos/github-img.png"          width="160px" alt="sould be a image"></a>
 
-            <ul>
-                <li><a href="../../index.html" >Main page</a></li>
-                <li><a href="/html/page2.html" >My Workspace</a></li>
-                <li><a href="/html/page3.html" >My music page</a></li>
-                <li><a href="/html/page4.html" >My Portfolio</a></li>
-                <li><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
-                <li><a href="/html/page6.html" >CSS Designe</a></li>
-                <li><a href="/html/page7.html" >Flex/grid Designe</a></li>
-                <li><a href="/html/page8.html" >java script</a></li>
-            </ul>
-        </nav>
-    </header>
-    <body><!--     java script         -->  
-        <h1 id="title">Hello World !</h1>
-        <p class="myClass">hello</p>
-        <p class="myClass">world</p>          
-        <script>
 
-            console.log(window);
-            console.log(document);
-            console.log(document.documentURI);
-            // selectioner par son ID
-            let title = document.getElementById("title")
-            let title2 = document.getElementById("title2")
-            //reupere uniquement le TEXT
-            console.log(title.innerText);
-            //recupere uniquement le HTML
-            console.log(title.innerHTML);
-           //Modifier contenu TEXT pas les tag
-           title.innerText = "<em> Visurex's java's page</em>";
-           //Modifier contenu HTML
-          // title2.innerHTML = "<strong> Visurex's java's page</strong>";
-           //selectioner par class css
-           let myClass = document.getElementsByClassName("myClass")
+    <body>
+        <header>
+            <nav>        
+                <nav id="header"><a href="#footer">Jump to bottom of page</a></nav>
 
-           
-            
-            
-        </script>
+                <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="sould be a image"></a>
+                <a href="https://www.facebook.com"  target="_blanc"><img src="/assets/images/Logos/facebook-logo-img.png"   width="115px" alt="sould be a image"></a>
+                <a href="https://www.twitch.tv"     target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png"     width="90px"  alt="sould be a image"></a>
+                <a href="https://www.twitter.com"   target="_blanc"><img src="/assets/images/Logos/twitter-img.png"         width="110px" alt="sould be a image"></a> 
+                <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png"  width="110px" alt="sould be a image"></a>
+                <a href="https://www.youtube.com"   target="_blanc"><img src="/assets/images/Logos/youtube-img.png"         width="160px" alt="sould be a image"></a>
+                <a href="https://www.github.com/"   target="_blanc"><img src="/assets/images/Logos/github-img.png"          width="160px" alt="sould be a image"></a>
+
+                <div class="container">
+                    <ul>
+                        <li><a href="../../index.html" >Main page</a></li>
+                        <li><a href="/html/page2.html" >My Workspace</a></li>
+                        <li><a href="/html/page3.html" >My music page</a></li>
+                        <li><a href="/html/page4.html" >My Portfolio</a></li>
+                        <li><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
+                        <li><a href="/html/page6.html" >CSS Designe</a></li>
+                        <li><a href="/html/page7.html" >Flex/grid Designe</a></li>
+                        <li><a href="/html/page8.html" >java script</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </header>   
+
+            <h1 id="main-heading">Hello World !</h1>
+            <p class="list-item">hello</p>
+            <script>
+                const title = document.querySelector('main-heading');
+                title.style.color = 'red';
+                console.log(title)
+            </script>
+
     </body>
 </html>
+

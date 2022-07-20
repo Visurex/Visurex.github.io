@@ -162,28 +162,4 @@
         align-items:center;
     }
 
-    .sectionh1{
 
-        background: black;
-        width:300px ;
-        height:100px;
-        font-size:20px;
-        
-        
-    }
-    .sectionh2{
-
-        background: green;
-        width:300px ;
-        height:100px;
-        font-size:20px;
-        
-    }
-    .sectionh3{
-
-        background: red;
-        width:300px ;
-        height:100px;
-        font-size:20px;
-        
-    }
