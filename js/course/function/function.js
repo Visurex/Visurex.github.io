@@ -444,3 +444,35 @@ console.log(testLogicalAnd(10));
         return "Change Me";
     }
     console.log(golfScore(4, 1));
+
+// Returning Boolean Values from Functions
+//  You may recall from Comparison with the Equality Operator that all comparison
+//   operators return a boolean true or false value.
+//   Sometimes people use an if/else statement to do a comparison, like this:
+//    But there's a better way to do this. Since === returns true or false,
+//     we can return the result of the comparison:
+
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isEqual(1 , 2))
+
+//-----------------------
+
+function isEqual(a, b) {
+  return a === b;
+}
+
+console.log(isEqual(1,1))
+
+//-----------------------
+function isLess(a, b) {
+  return a < b;
+  }
+
+console.log(isLess(20, 15));
