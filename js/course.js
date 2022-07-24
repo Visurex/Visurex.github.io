@@ -1,72 +1,3 @@
-/*Return Early Pattern for Functions
-When a return statement is reached, the execution of the current function stops and control returns to the calling location.
-
-Example
-
-function myFun() {
-  console.log("Hello");
-  return "World";
-  console.log("byebye")
-}
-myFun();
-The above will display the string Hello in the console, and return the string World. The string byebye will never display in the console, because the function exits at the return statement.
-
-*/
-function abTest(a, b) {
-  
-  if (a < 0 || b < 0){
-    return undefined
-  }
-
-  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
-}
-
-console.log(abTest(2,2));
-/* 
-Counting Cards
-In the casino game Blackjack, a player can determine whether they have an advantage on the next hand over the house by keeping track of the relative number of high and low cards remaining in the deck. This is called Card Counting.
-
-Having more high cards remaining in the deck favors the player. Each card is assigned a value according to the table below. When the count is positive, the player should bet high. When the count is zero or negative, the player should bet low.
-
-Count Change	Cards
-+1	2, 3, 4, 5, 6
-0	7, 8, 9
--1	10, 'J', 'Q', 'K', 'A'
-*/
-
-var count = 0;
-
-function cc(card) {
-  switch(card) {
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      count++;
-      break;
-    case 10:
-    case "J":
-    case "Q":
-    case "K":
-    case "A":
-      count--;
-      break;
-  }
-
-  var holdbet = 'Hold'
-  if (count > 0) {
-    holdbet = 'Bet'
-  }
-
-  return count + " " + holdbet;
-
-}
-
-
-
-console.log(cc(8))
-
 
 /*
 Build JavaScript Objects
@@ -92,8 +23,6 @@ const anotherObject = {
   "model": "focus"
 };
 However, if your object has any non-string properties, JavaScript will automatically typecast them as strings.
-
-
 
 */
 
