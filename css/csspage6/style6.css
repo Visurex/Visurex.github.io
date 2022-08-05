@@ -281,11 +281,7 @@
             height: 400px;
             width: 800px;
             margin-left: 100px;
-            
-
-            
-            
-            
+   
         }
 
         .newBox2{
@@ -293,7 +289,7 @@
             background: repeating-linear-gradient(45deg,yellow 0px,yellow 40px,black 40px,black 80px);
             border-width: 10px;
             border-style: groove;
-            border-color: white;
+            border-color: hsl(211, 55%, 46%);
             border-radius: 10px;
             
             margin-left: 200px;
@@ -316,6 +312,28 @@
             font-weight:600;
             text-shadow:3px 2px black;
 
+        }
+        .wheel{
+            background: hsl(191, 57%, 80%);
+            text-align: center;
+            border-radius: 100%;
+            width: 75px;
+            height: 75px;
+            margin: 5px;
+
+            animation: wheelAnim;
+            animation-duration: 10s; 
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            position: absolute;
+        }
+        .wheel:hover{
+            background-color: rgb(5, 243, 5);
+        }
+
+        @keyframes wheelAnim{
+            50%{ margin-left: 725px; margin-top: 325px; background: red; }
         }
 
         /** 
