@@ -12,31 +12,21 @@
 
         }
     
-    h1 {   
-        
-
+    h1 {       
         font-size:35px;
         color: rgba(219, 219, 51, 1);
         text-align: center;  
         font-family:'monospace', Courier, monospace; 
-        
-   
     }
 
-
-
     p {
-
         font-size: 35px;
         color: rgb(1, 243, 1);
         text-transform: uppercase;
         text-align: center;
-        
-
     }
 
     ul {
-
         background: white;
         color: green;
         list-style-type:upper-roman;
@@ -46,22 +36,16 @@
         border: groove;
         border-width: 20px 20px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
-
-        z-index: 1
-        
+        z-index: 1    
     }
     
     li {
 
         text-align: center;
         font-size: 30px;
-        
-
     }
 
     hr {
-
-       
         margin-top: 20px;
         margin-bottom: 20px;
         margin-left: auto;
@@ -69,38 +53,26 @@
         border-style: inset;
         border-width: 8px;
         border-color: rgba(32, 209, 194, 0.815);
-
     }
     
-
     figure {
-    
         color: yellow;
         text-align: center;
         margin: default;
-        font-size: 20px
-        
+        font-size: 20px  
         }
-
-    figcaption {
-       
+    figcaption {  
         font-size: large;
-
     }
-
     .fixedbox {
-    
         font-size: 30px;
-        
         position: fixed;
         right: 0%;
         background:aliceblue;
         border: groove;
         border-width: 10px 10px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
-        
         z-index: 2
-        
     }
 
 
