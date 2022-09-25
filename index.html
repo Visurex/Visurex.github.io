@@ -1,9 +1,9 @@
-
 <!--  <br />   <pre>   </pre>
 ---------------------------------------
     <select>
         <option value=""></option>
         <option value="chase">chase</option>
+
         display: inline-block;  wraps the block to the content
         border: #fff 1px solid;
     </select>
@@ -55,31 +55,21 @@ formater
 -->
 
 <!DOCTYPE html>
-
 <html lang="en">
-    <!--<a href="ancres.html#rollers"> -->
-
-    <head>
-
-        <title>Visurex's Website</title>
-
-        <meta charset="utf-8">
-        <meta name="keywords"    content="Visurex,Virus-Mx">
-        <meta name="description" content="Visurex's Website"/>
-        <meta name="author"      content="Visurex"/>
-
+        <!--<a href="ancres.html#rollers"> -->
+        <head><meta charset="UTF-8">
+        <meta name="keywords" content="Visurex,Virus-Mx">
+        <meta name="description" content="Visurex's Website">
+        <meta name="author" content="Visurex">
         <link rel="stylesheet" href="css/style.css">
-        
-
+        <title>Visurex's Website</title>
     </head>
-    
     <body>
         <div>
             <header>
                 <nav>
                     <nav class="fixedbox">i'am a fixed box</nav>
                     <nav id="header"><a href="#footer">Jump to bottom of page</a>
-
                     <a href="https://www.google.com"    target="_blanc"><img src="/assets/images/Logos/google-img.png"          width="180px" alt="a link to Google"></a>
                     <a href="https://www.facebook.com"  target="_blanc"><img src="/assets/images/Logos/facebook-logo-img.png"   width="115px" alt="a link Facebook"></a>
                     <a href="https://www.twitch.tv"     target="_blanc"><img src="/assets/images/Logos/twitch-logo-img.png"     width="90px"  alt="a link Twitch"></a>
@@ -87,19 +77,18 @@ formater
                     <a href="https://www.instagram.com" target="_blanc"><img src="/assets/images/Logos/instagram-logo-img.png"  width="110px" alt="a link Instagram"></a>
                     <a href="https://www.youtube.com"   target="_blanc"><img src="/assets/images/Logos/youtube-img.png"         width="160px" alt="a link Youtube"></a>
                     <a href="https://www.github.com/"   target="_blanc"><img src="/assets/images/Logos/github-img.png"          width="160px" alt="a link Github"></a>
-
                     <ul>
-                        <li><a href="index.html"       >Main page</a></li>
-                        <li><a href="/html/page2.html" >My Workspace</a></li>
-                        <li><a href="/html/page3.html" >My music page</a></li>
-                        <li><a href="/html/page4.html" >My Portfolio</a></li>
-                        <li><a href="/html/page5.html" >Dragonball pic Gallery</a></li>
-                        <li><a href="/html/page6.html" >CSS Designe</a></li>
-                        <li><a href="/html/page7.html" >Flex/grid Designe</a></li>
-                        <li><a href="/html/page8.html" >java script</a></li>
+                        <li><a href="index.html"      >Main page</a></li>
+                        <li><a href="/html/page2.html">My Workspace</a></li>
+                        <li><a href="/html/page3.html">My music page</a></li>
+                        <li><a href="/html/page4.html">My Portfolio</a></li>
+                        <li><a href="/html/page5.html">Dragonball pic Gallery</a></li>
+                        <li><a href="/html/page6.html">CSS Designe</a></li>
+                        <li><a href="/html/page7.html">Flex/grid Designe</a></li>
+                        <li><a href="/html/page8.html">java script</a></li>
                     </ul>
                 </nav>
-            <header>
+            </header>
             <main>
                 <article>
                     <section>
@@ -110,7 +99,6 @@ formater
                             <img class="imgBorder" width="270" src="/assets/images/Dbz/dbz-img-32.jpg" alt="dbz image">
                             <video class="videoBorder" controls width="270" src="/assets/videos/best moment.mp4" poster="/assets/images/best dbz.jpg"   controls loop width="200">can't display video</video>
                             <img class="imgBorder" width="270"  src="/assets/images/Dbz/dbz-img-32.jpg"  alt="dbz image>">
-
                     </section>
                     <hr>
                 </article>   
@@ -173,8 +161,7 @@ formater
                             <legend>User Password</legend>
 
                             <label for="userPassword"></label>
-                            <input type="text"     id="userPassword" value="Enter your username"/>
-                            <input type="password" id="userPassword" value="Enter password"/>
+                            <input type="text" id="userPassword" value="Enter your username"/>
                         </fieldset>
                         <label for="loving">Loving</label>
                         <input id="loving" type="checkbox" text="loving"> 
@@ -253,21 +240,14 @@ formater
     </body>        
 </html>
 
- <!--                           
-                        ----------------------------
-    
+ <!--
                                 background: var(--penguin-skin, gray);    use the variable and a fallback variable  in class or ..
-
                                 @media (max-width: 350px) {    is used to adapt size/color when window changes size 
                                 :root {
-                                    
                                     --penguin-size: 200px;
                                     --penguin-skin: black;
-                                    
                                         }
-
                                     }
-
                                     .box {                
                                         border-style: solid;
                                         border-color: black;
@@ -276,27 +256,18 @@ formater
                                         margin-right: 0;
                                         padding-left: 0;
                                             }
-
-
-                                  
-                            
                                 #height{             
                                     padding-bottom: 200px;    
                                 }
-
                                 :root{                                    container for the whole page
                                             --penguin-belly:pink;       root used the variable to be available globally and can be accessed from any other selector in the style sheet.
-
                             }
                         ------------------------------------------------------           
-                                use <aside> </aside> 
-
+                        use <aside> </aside> 
                         -----------------------------------------------------
-
                                 However, CSS's magic can also improve accessibility on your page when you want to visually hide content meant only for screen readers.
                                 This happens when information is in a visual format (like a chart), but screen reader users need an alternative presentation (like a table) to access the data.
                                 CSS is used to position the screen reader-only elements off the visual area of the browser window.
-
                                 Here's an example of the CSS rules that accomplish this:
                                 .sr-only {
                                   position: absolute;
@@ -307,36 +278,7 @@ formater
                                   overflow: hidden;
                                 }
                                 Note: The following CSS approaches will NOT do the same thing:
-
                                 display: none; or visibility: hidden; hides content for everyone, including screen reader users
                                 Zero values for pixel sizes, such as width: 0px; height: 0px; removes that element from the flow of your document, meaning screen readers will ignore it
-
-
                          -------------------------------------------------
-                <html>
-
-                     <head>
-                        <meta charset="UTF-8">
-                        <meta name="description" content="this is Visurex's Website">
-                        <title>Visurex's website</title>
-                     </head>
-                 
-                     <body style="background-color:rgb(118, 47, 173);">
-                        <h1><big>Visurex's Website</big></h1>
-                        <p>this is another <b>of my peragraph</b></p>
-                        <p>this is <i>my peragraph</i></p>
-                        <br/><hr/> space between lines / draw line
-                        <p>this is another <i><b>of my peragraph</b></i></p>
-                        <p><small>this <big>is</big> another <big>of</big> my peragraph</small></p>
-                        <p style="color:green">H<sub>2</sub>0</p>
-                        <p style="color:blue; background-color:red;">10<sup>2</sup></p>
-                     </body>
-                 
-                </html>   
-
-    -->
-
-
-
-
-
+-->
